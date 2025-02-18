@@ -1,0 +1,1077 @@
+---
+title: "Glycerol and Methanol Fed-Batch Proteomics of Pichia Pastoris"
+author: "Aiden Beauglehole"
+date: "February 2025"
+output:
+  html_document:
+    df_print: paged
+  html_notebook: default
+  pdf_document: default
+---
+
+The proceeding analysis is an analysis of a Pichia Pastoris strain undergoing fed-batch fermentation over 5 different time points. Data collected by N. Huynh. 
+
+```{r}
+library(FactoMineR)
+library(ggplot2)
+library(ggfortify)
+library(reshape2)
+library(tidyverse)
+library(qvalue)
+library(limma)
+library(dplyr)
+library(KEGGREST)
+library(clusterProfiler)
+library(tidyr)
+library(httr)
+library(jsonlite)
+library(readr)
+library(tibble)
+library(pathview)
+library(purrr)
+library(grid)
+library(patchwork)
+library(VennDiagram)
+library(gridExtra)
+library(gridGraphics)
+library(cowplot)
+library(pairwiseAdonis)
+library(vegan)
+```
+
+# Creates a PCA based on 5th percentile imputation 
+- Data is obtained from the raw data off Spectronaut. It is partitioned into columns that contain the sample information with rows being the proteins.
+- Data then undergoes 5th percentile imputation according to the script below. 
+- The sample information that defines what each sample represents is provided in a separate csv file called sample_information.
+- Data is transposed so the rows and columns are in the right orientation for the PCA to run. 
+
+```{r}
+# Load the data
+original_data_path <- "data/proteome_data.tsv"
+data_original <- read.csv(original_data_path, sep="\t", check.names = FALSE, row.names = 1)
+data_original[data_original == "No Data"] <- NA
+data_original[] <- lapply(data_original, function(x) as.numeric(as.character(x)))
+
+# Impute missing values using the 5th percentile for each column
+percentile_5th <- apply(data_original, 2, function(x) quantile(x, probs = 0.05, na.rm = TRUE))
+data_imputed <- data_original
+for (i in seq_along(percentile_5th)) {
+  data_imputed[is.na(data_imputed[, i]), i] <- percentile_5th[i]
+}
+
+# Transpose the data
+data_transposed <- as.data.frame(t(data_imputed))
+
+# Perform PCA on the imputed data
+pca_imputed <- PCA(data_transposed, scale.unit = TRUE, graph = FALSE)
+
+# Get the percentage of variance explained by PC1 and PC2
+pc1_var <- pca_imputed$eig[1, 2]
+pc2_var <- pca_imputed$eig[2, 2]
+
+# Create a data frame for the PCA results
+pca_df <- data.frame(
+  PC1 = pca_imputed$ind$coord[, 1],
+  PC2 = pca_imputed$ind$coord[, 2],
+  Sample = rownames(pca_imputed$ind$coord)
+)
+
+# Load the sample information
+sample_info_path <- "data/sample_information.csv"
+sample_info <- read.csv(sample_info_path)
+
+# Trim whitespace in the Group column
+sample_info$Group <- trimws(sample_info$Group)
+
+# Merge PCA results with sample information
+pca_df <- merge(pca_df, sample_info, by = "Sample")
+
+# Plot PCA 
+ggplot(pca_df, aes(x = PC1, y = PC2, color = Group)) +
+  geom_point(size = 4) +
+  labs(
+    title = "PCA Plot of Data with 5th Percentile Imputation",
+    x = paste0("PC1 (", round(pc1_var, 2), "% variance explained)"),
+    y = paste0("PC2 (", round(pc2_var, 2), "% variance explained)")
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(size = 16, hjust = 0.5),
+    axis.text = element_text(size = 14),
+    axis.title = element_text(size = 14),
+    legend.position = "right",
+    legend.title = element_text(size = 20),
+    legend.text = element_text(size = 20)
+  ) +
+  scale_fill_discrete(name = "Group") +
+  scale_color_discrete(name = "Group")
+
+```
+
+# Histograms showing data distriution of each sample
+- Each data sample is trends towards normal distribution with skewing where the 5th percentile imputation occurs 
+
+```{r}
+data_long <- data_imputed %>%
+    as.data.frame() %>%
+    rownames_to_column("Protein") %>%    # Now "Protein" contains the row names
+    pivot_longer(cols = -Protein, names_to = "Sample", values_to = "Expression")
+
+# Plot histogram for each sample
+ggplot(data_long, aes(x = Expression)) +
+    geom_histogram(bins = 30, fill = "blue", alpha = 0.7) +
+    facet_wrap(~ Sample, scales = "free_y") +
+    labs(title = "Distribution of Protein Expression Values", 
+         x = "Expression Value", 
+         y = "Frequency") +
+    theme_minimal()
+```
+
+
+# Histogram of the entire data set.
+
+- Distribution analysis continues.
+
+- Checks if the entire data set combined is normally distributed. 
+
+- There is skewing at the lower end once again caused by 5th percentile imputation
+
+```{r}
+# Combine all the expression values into one vector
+all_expression_values <- unlist(data_imputed)
+
+# Convert the combined expression values into a long-format data frame suitable for ggplot2
+long_data <- data.frame(
+  value = all_expression_values
+)
+
+# Plot the histogram using ggplot2
+ggplot(long_data, aes(x = value)) +
+  geom_histogram(fill = "lightblue", color = "black", binwidth = 0.5) +
+  labs(x = "Log2 Transformed Values", y = "Frequency") +
+  theme_bw() + 
+  theme(
+    plot.title = element_text(hjust = 0.5, face = "bold", size = 14),
+    axis.title.x = element_text(face = "bold", size = 12),
+    axis.title.y = element_text(face = "bold", size = 12),
+    axis.text.x = element_text(size = 10),
+    axis.text.y = element_text(size = 10),
+    panel.grid.major = element_line(color = "gray85"),
+    panel.grid.minor = element_blank(),
+    panel.border = element_rect(colour = "black", fill = NA, size = 1),
+    plot.background = element_rect(color = "black", fill = NA, size = 2)
+  )
+```
+
+# Bar chart showing how each principal component contributes to variation. 
+
+- Red line shows a value equal variance = to 11.11%.
+- Not necessarily useful in analysing proteomic differences in this sheets current capacity, but useful in for future modeling if required. 
+
+```{r}
+
+# Extract the proportion of variance explained by each principal component and convert to percentage
+explained_var <- pca_imputed$eig[,2]
+
+# Creating the data frame for plotting
+explained_var_df <- data.frame(
+  PC = factor(paste0("PC", 1:length(explained_var)), levels = paste0("PC", 1:length(explained_var))),
+  Variance = explained_var
+)
+
+# Plot using ggplot2
+ggplot(explained_var_df, aes(x = PC, y = Variance, fill = Variance)) + 
+  geom_bar(stat = "identity", position = "dodge", color = "black") + 
+  geom_hline(yintercept = 11.11, col = "red") +
+  labs(title = "Variance Explained by Each Principal Component", 
+       y = "Percentage of Variance Explained", x = "Principal Component") + 
+  theme_minimal() +
+  scale_fill_gradient(low = "white", high = "darkorange2") +
+  theme(panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank())
+```
+
+
+# Volcano plot showing the significantly different proteins between glycerol feeding and 24 hours of methanol feeding and their log2 fold changes using BH method
+
+# T-tests are performed between the data sets to identify significant differences
+
+- Workflow changes to analysing protein differences between the different time points in the data 
+
+- t-tests between log2 fold changes between the datasets are a common way to do this
+
+- The imputed data is used for this analysis 
+
+- The Benjamini-Hochberg (BH) method is used for the adjusted p-values 
+
+```{r}
+# Define a function to perform the comparison between two groups
+compare_groups <- function(group1, group2, sample_info, data_imputed, volcano_title) {
+  # Filter the sample information for the two groups of interest
+  selected_samples <- sample_info %>%
+    filter(Group %in% c(group1, group2))
+  
+  # Subset the imputed data to include only the selected samples
+  # (Assumes that sample_info$Sample matches the column names of data_imputed)
+  data_selected <- data_imputed[, selected_samples$Sample]
+  
+  # Split the data into the two groups based on sample_info
+  data_group1 <- data_selected[, selected_samples$Sample[selected_samples$Group == group1]]
+  data_group2 <- data_selected[, selected_samples$Sample[selected_samples$Group == group2]]
+  
+  # Calculate the log2 fold change (group2 minus group1)
+  log2_fc <- rowMeans(data_group2, na.rm = TRUE) - rowMeans(data_group1, na.rm = TRUE)
+  
+  # Perform t-tests for each protein/row
+  p_values <- apply(data_selected, 1, function(x) {
+    t.test(x[selected_samples$Group == group2], 
+           x[selected_samples$Group == group1])$p.value
+  })
+  
+  # Create a data frame with the results
+  results <- data.frame(
+    Protein = rownames(data_selected),
+    log2FC = log2_fc,
+    p_value = p_values,
+    stringsAsFactors = FALSE
+  )
+  
+  # Adjust p-values using the Benjamini–Hochberg method
+  results$adj_p_value <- p.adjust(results$p_value, method = "BH")
+  
+  # Plot: Histogram of raw p-values
+  p1 <- ggplot(results, aes(x = p_value)) +
+    geom_histogram(binwidth = 0.01, color = "black", fill = "skyblue") +
+    labs(title = paste("Histogram of P-values:", volcano_title),
+         x = "P-value",
+         y = "Frequency") +
+    theme_minimal()
+  
+  # Plot: Histogram of adjusted p-values
+  p2 <- ggplot(results, aes(x = adj_p_value)) +
+    geom_histogram(binwidth = 0.01, color = "black", fill = "skyblue") +
+    labs(title = paste("Histogram of Adjusted P-values:", volcano_title),
+         x = "Adjusted P-value",
+         y = "Frequency") +
+    theme_minimal()
+  
+  # Plot: Volcano plot
+  p3 <- ggplot(results, aes(x = log2FC, y = -log10(adj_p_value))) +
+    geom_point(alpha = 0.5) +
+    geom_hline(yintercept = -log10(0.05), linetype = "dashed", color = "red") +
+    geom_vline(xintercept = c(-1, 1), linetype = "dashed", color = "blue") +
+    labs(title = volcano_title,
+         x = "Log2 Fold Change",
+         y = "-Log10 Adjusted P-value") +
+    theme_minimal() +
+    theme(plot.title = element_text(hjust = 0.5))
+  
+  # Return a list containing the results and the plots
+  list(results = results, p1 = p1, p2 = p2, p3 = p3)
+}
+
+# Now, call the function for each of your four comparisons:
+
+# 1. Glycerol Feeding vs. Methanol 24 Hours
+res_24h <- compare_groups("Glycerol Feeding", "Methanol 24 hours", sample_info, data_imputed,
+                          "Glycerol Feeding vs. 24 Hours Methanol Feeding")
+
+# 2. Glycerol Feeding vs. Methanol 48 Hours
+res_48h <- compare_groups("Glycerol Feeding", "Methanol 48 hours", sample_info, data_imputed,
+                          "Glycerol Feeding vs. 48 Hours Methanol Feeding")
+
+# 3. Glycerol Feeding vs. Methanol 72 Hours
+res_72h <- compare_groups("Glycerol Feeding", "Methanol 72 hours", sample_info, data_imputed,
+                          "Glycerol Feeding vs. 72 Hours Methanol Feeding")
+
+# 4. Glycerol Feeding vs. Glycerol Resting
+res_glycerol_resting <- compare_groups("Glycerol Feeding", "Glycerol Resting", sample_info, data_imputed,
+                                       "Glycerol Feeding vs. Glycerol Resting")
+
+# View the volcano plots
+print(res_24h$p3)
+print(res_48h$p3)
+print(res_72h$p3)
+print(res_glycerol_resting$p3)
+
+# Combine the volcano plots from the four comparisons into one 2x2 grid
+combined_volcano_plot <- (res_24h$p3 | res_48h$p3) / (res_72h$p3 | res_glycerol_resting$p3)
+
+# Display the combined plot
+print(combined_volcano_plot)
+```
+
+# Volcano plot showing the significantly different proteins between glycerol feeding, glycerol resting, and the subsequent methanol feedings. 
+
+- From the volcano plot, no proteins are significantly different in the data set 
+
+- As we have low sample numbers between the groups - 2 - it becomes difficult for any significant result to occur due to high variability and low degrees of freedom, which can affect the shape of the t-distribution used to calculate the p-values. 
+
+- Empirical Bayes offers an alternative that looks at the entirety of the data set when performing statistics as opposed to the just the proteins of interest within the groups samples. 
+
+- Empirical Bayes methods start with Bayesian principles but uses the data itself to estimate the distributional parameters. 
+
+- Empirical Bayes methods typically involve "shrinking" estimates towards a central value or towards each other, improving the stability and reliability of the estimates. 
+
+- linear models for microarray data- LIMMA - uses Empirical Bayes to estimate the variances and mean differences for each protein. It calculates moderated t-statistics, whic- h are t-statistics that have been adjusted using the EB-estimated variances.
+
+- The moderated t-statistics from this output has ~3.83 degrees of freedom in the context of the moderated t-tests. This is an improvement over the 2 that is provided using just t-test comparisons. 
+
+```{r}
+# Define a function to perform empirical Bayes analysis using limma for two groups
+compare_groups_limma <- function(group1, group2, sample_info, data_imputed, volcano_title, csv_file_name = NULL) {
+  
+  # 1. Filter sample information for the two groups
+  selected_samples <- sample_info %>% 
+    filter(Group %in% c(group1, group2))
+  
+  # Subset the imputed data to include only the selected samples
+  # (Assumes that sample_info$Sample matches the column names of data_imputed)
+  data_selected <- data_imputed[, selected_samples$Sample]
+  
+  # 2. Prepare the design matrix (without intercept)
+  design <- model.matrix(~ 0 + selected_samples$Group)
+  # Set column names based on the groups, replacing spaces with underscores for safe names
+  colnames(design) <- c(gsub(" ", "_", group1), gsub(" ", "_", group2))
+  
+  # 3. Fit the linear model using limma
+  fit <- lmFit(data_selected, design)
+  
+  # Create a contrast matrix: group2 - group1
+  contrast_formula <- paste0(gsub(" ", "_", group2), " - ", gsub(" ", "_", group1))
+  contrast_matrix <- makeContrasts(contrasts = contrast_formula, levels = design)
+  
+  # Fit the contrasts and perform empirical Bayes moderation
+  fit2 <- contrasts.fit(fit, contrast_matrix)
+  fit2 <- eBayes(fit2)
+  
+  # 4. Extract the results using topTable (all proteins)
+  results <- topTable(fit2, adjust.method = "BH", number = Inf)
+  results$Protein <- rownames(results)
+  
+  # Extract significantly different proteins: adjusted p-value < 0.05 and |logFC| >= 1
+  significant_proteins <- results %>%
+    dplyr::filter(adj.P.Val < 0.05 & abs(logFC) >= 1) %>%
+    dplyr::select(Protein, logFC, adj.P.Val)
+  
+  # If a CSV file name is provided, save the significant proteins list to file
+  if (!is.null(csv_file_name)) {
+    write.csv(significant_proteins, csv_file_name, row.names = FALSE)
+  }
+  
+  # 5. Create plots:
+  # Histogram of raw p-values
+  p_value_histogram <- ggplot(results, aes(x = P.Value)) +
+    geom_histogram(binwidth = 0.01, color = "black", fill = "skyblue") +
+    labs(title = paste("Histogram of P-values (Empirical Bayes):", volcano_title),
+         x = "P-value", y = "Frequency") +
+    theme_minimal()
+  
+  # Histogram of adjusted p-values
+  adj_p_value_histogram <- ggplot(results, aes(x = adj.P.Val)) +
+    geom_histogram(binwidth = 0.01, color = "black", fill = "skyblue") +
+    labs(title = paste("Histogram of Adjusted P-values (Empirical Bayes):", volcano_title),
+         x = "Adjusted P-value", y = "Frequency") +
+    theme_minimal()
+  
+  # Volcano plot: x = logFC, y = -log10(adj.P.Val)
+  volcano_plot <- ggplot(results, aes(x = logFC, y = -log10(adj.P.Val))) +
+    geom_point(alpha = 0.5) +
+    geom_hline(yintercept = -log10(0.05), linetype = "dashed", color = "red") +
+    geom_vline(xintercept = c(-1, 1), linetype = "dashed", color = "blue") +
+    labs(title = volcano_title, x = "Log2 Fold Change", y = "-Log10 Adjusted P-value") +
+    theme_minimal()
+  
+  # Return a list containing the results, significant proteins, and plots
+  return(list(results = results, 
+            significant_proteins = significant_proteins,
+            p_value_histogram = p_value_histogram,
+            adj_p_value_histogram = adj_p_value_histogram,
+            volcano_plot = volcano_plot,
+            fit2 = fit2))
+}
+
+# Call the function for each of the four comparisons
+
+# 1. Glycerol Feeding vs. Methanol 24 Hours
+res_EB_24 <- compare_groups_limma("Glycerol Feeding", "Methanol 24 hours", sample_info, data_imputed,
+                                  "Glycerol Feeding vs. 24 Hours Methanol Feeding",
+                                  "significant_proteins_glycerol_feeding_methanol_24.csv")
+
+# 2. Glycerol Feeding vs. Methanol 48 Hours
+res_EB_48 <- compare_groups_limma("Glycerol Feeding", "Methanol 48 hours", sample_info, data_imputed,
+                                  "Glycerol Feeding vs. 48 Hours Methanol Feeding",
+                                  "significant_proteins_methanol_48_hours.csv")
+
+# 3. Glycerol Feeding vs. Methanol 72 Hours
+res_EB_72 <- compare_groups_limma("Glycerol Feeding", "Methanol 72 hours", sample_info, data_imputed,
+                                  "Glycerol Feeding vs. 72 Hours Methanol Feeding",
+                                  "significant_proteins_methanol_72_hours.csv")
+
+# 4. Glycerol Feeding vs. Glycerol Resting
+res_EB_rest <- compare_groups_limma("Glycerol Feeding", "Glycerol Resting", sample_info, data_imputed,
+                                    "Glycerol Feeding vs. Glycerol Resting",
+                                    "significant_proteins_glycerol_resting.csv")
+
+
+
+# Combine the volcano plots from the four comparisons into one 2×2 grid using patchwork
+combined_volcano <- (res_EB_24$volcano_plot | res_EB_48$volcano_plot) /
+                    (res_EB_72$volcano_plot | res_EB_rest$volcano_plot)
+
+# Display the combined volcano plot
+print(combined_volcano)
+
+```
+
+# Compares the methanol feeding samples between each other
+
+- Uses Empirical Bayes again for t-tests comparing the methanol feeding. 
+
+```{r}
+# Compare Methanol 24 hours vs. Methanol 48 hours
+res_EB_24_vs_48 <- compare_groups_limma(
+  group1 = "Methanol 24 hours", 
+  group2 = "Methanol 48 hours", 
+  sample_info = sample_info, 
+  data_imputed = data_imputed,
+  volcano_title = "Methanol 24 vs. 48 Hours",
+  csv_file_name = "significant_proteins_methanol_24_vs_48.csv"
+)
+
+# Compare Methanol 24 hours vs. Methanol 72 hours
+res_EB_24_vs_72 <- compare_groups_limma(
+  group1 = "Methanol 24 hours", 
+  group2 = "Methanol 72 hours", 
+  sample_info = sample_info, 
+  data_imputed = data_imputed,
+  volcano_title = "Methanol 24 vs. 72 Hours",
+  csv_file_name = "significant_proteins_methanol_24_vs_72.csv"
+)
+
+# Compare Methanol 48 hours vs. Methanol 72 hours
+res_EB_48_vs_72 <- compare_groups_limma(
+  group1 = "Methanol 48 hours", 
+  group2 = "Methanol 72 hours", 
+  sample_info = sample_info, 
+  data_imputed = data_imputed,
+  volcano_title = "Methanol 48 vs. 72 Hours",
+  csv_file_name = "significant_proteins_methanol_48_vs_72.csv"
+)
+
+# Combine the volcano plots into one row using patchwork.
+# (You can adjust the layout as needed; here we put them side-by-side.)
+combined_volcano_methanol <- res_EB_24_vs_48$volcano_plot | 
+                             res_EB_24_vs_72$volcano_plot | 
+                             res_EB_48_vs_72$volcano_plot
+
+# Display the combined volcano plot
+print(combined_volcano_methanol)
+```
+
+
+From the extracted analysis, it would be useful to perform Gene Ontology analysis or pathway analysis to see the areas the pathways the protein differences are occurring. 
+
+
+The follow pieces of analysis are how set this up, extracting the data from the KEGG API.
+
+# Extraction of annotated pichia proteome to KEGG pathways
+
+```{r}
+# Load the data, this is the entire Pichia proteome
+data <- read.csv("data/pichia_proteome_kegg.csv")
+
+# Extract the unique KEGG IDs and remove duplicates
+kegg_ids_new <- unique(gsub(";.*", "", data$KEGG))
+
+# Function to fetch pathway annotations for a given KEGG ID
+get_pathway_annotations <- function(kegg_id) {
+  Sys.sleep(1/2)  # Pause for 1/2 of a second before each request to adhere to the rate limit
+  tryCatch({
+    pathways <- keggGet(kegg_id)[[1]]$PATHWAY
+    if (!is.null(pathways)) {
+      return(names(pathways))
+    } else {
+      return(NA)
+    }
+  }, error = function(e) {
+    message("Error with KEGG ID ", kegg_id, ": ", e$message)
+    return(NA)
+  })
+}
+
+# Split the KEGG IDs into smaller batches if needed
+batch_size <- 400  # You can adjust batch size based on your specific needs
+kegg_id_batches <- split(kegg_ids_new, ceiling(seq_along(kegg_ids_new)/batch_size))
+
+# Process each batch and collect results
+annotations_new <- purrr::map(kegg_id_batches, function(batch) {
+  sapply(batch, get_pathway_annotations)
+})
+
+# Unlist and simplify the results to match the original structure
+annotations_new <- unlist(annotations_new, recursive = FALSE)
+
+# Create a tibble with the results
+pathway_annotations_new <- tibble(
+  KEGG_ID = names(annotations_new),
+  Pathways = I(annotations_new)
+)
+
+# Ensure Pathways are wrapped in lists and convert any NULLs or NAs to actual NA values
+pathway_annotations_new$Pathways <- lapply(pathway_annotations_new$Pathways, function(x) {
+  if (is.null(x) || (is.character(x) && length(x) == 0)) {
+    NA 
+  } else {
+    as.list(x)
+  }
+})
+
+# Use mutate to ensure Pathways is a list and use unnest to convert list elements into separate rows
+pathway_annotations_new <- pathway_annotations_new %>%
+  mutate(Pathways = purrr::map(Pathways, ~ if (is.null(.x) || length(.x) == 0) NA else .x)) %>%
+  unnest(Pathways, keep_empty = TRUE)
+
+# Function to get KEGG pathways
+get_kegg_pathways <- function(org_code) {
+  url <- paste0("https://rest.kegg.jp/list/pathway/", org_code)
+  response <- GET(url)
+  content <- content(response, "text")
+  pathways <- read.delim(text = content, header = FALSE, sep = "\t", stringsAsFactors = FALSE)
+  
+  # Check if the data has the correct format
+  if (ncol(pathways) != 2) {
+    stop("Unexpected format in KEGG API response")
+  }
+  
+  colnames(pathways) <- c("PathwayID", "PathwayName")
+  return(pathways)
+}
+
+# Fetch all Pichia pastoris pathways
+pichia_pathways <- get_kegg_pathways("ppa")
+
+# Ensure that both joining columns are of the same type
+pathway_annotations_new$Pathways <- as.character(pathway_annotations_new$Pathways)
+
+# Join the pathway annotations with pathway names from Pichia pastoris
+matched_pathways_new <- pathway_annotations_new %>%
+  left_join(pichia_pathways, by = c("Pathways" = "PathwayID"))
+
+# Save and print the pathway annotations
+write.csv(matched_pathways_new, "new_pichia_pathway_annotations.csv", row.names = FALSE)
+print(matched_pathways_new)
+```
+
+- The Pichia proteome serves as a background list for analysis. 
+
+- Next, the significantly different proteins comparing the Methanol 24 hours, Methanol 48 hours, and Methanol 72 hours are annotated to the KEGG pathways they are associated with. Glycerol resting is excluded from this portion of the analysis as they have too few pathways associated with their significant proteins.  
+
+
+```{r}
+# Define a helper function for pathway annotation
+annotate_pathways <- function(significant_proteins, annotation_fun, output_csv, 
+                              unnest_method = c("unnest", "unnest_longer")) {
+  # Choose the unnest method ("unnest" for 24h; "unnest_longer" for 48h/72h)
+  unnest_method <- match.arg(unnest_method)
+  
+  # Fetch pathway annotations using the provided annotation function
+  annotations <- sapply(significant_proteins$Protein, annotation_fun, USE.NAMES = FALSE)
+  
+  # Ensure each element is a list; if NULL or length 0, return NA
+  annotations <- lapply(annotations, function(x) {
+    if (is.null(x) || length(x) == 0) NA else as.list(x)
+  })
+  
+  # Create a data frame with the KEGG IDs and the list of pathway annotations
+  pathway_annotations <- data.frame(
+    KEGG_ID = significant_proteins$Protein,
+    Pathways = I(annotations),
+    stringsAsFactors = FALSE
+  )
+  
+  # Make sure the Pathways column is properly treated as a list-column
+  pathway_annotations$Pathways <- lapply(pathway_annotations$Pathways, function(x) {
+    if (length(x) == 1 && is.na(x)) NA else x
+  })
+  
+  # Expand the pathways data using the specified unnesting method
+  if (unnest_method == "unnest") {
+    pathway_annotations <- pathway_annotations %>% unnest(Pathways, keep_empty = TRUE)
+  } else {  # "unnest_longer"
+    pathway_annotations <- pathway_annotations %>% tidyr::unnest_longer(col = Pathways)
+  }
+  
+  # Convert the Pathways column to character type
+  pathway_annotations$Pathways <- as.character(pathway_annotations$Pathways)
+  
+  # Join the pathway annotations with pathway names from pichia_pathways
+  matched_pathways <- pathway_annotations %>%
+    left_join(pichia_pathways, by = c("Pathways" = "PathwayID"))
+  
+  # Save the results to a CSV file
+  write.csv(matched_pathways, output_csv, row.names = FALSE)
+  
+  # Print and return the matched pathways data frame
+  print(matched_pathways)
+  return(matched_pathways)
+}
+
+### Process Methanol 24 Hours ###
+# (Assumes significant_proteins_24 and get_pathway_annotations are available.)
+significant_proteins_24 <- read.csv("significant_proteins_glycerol_feeding_methanol_24.csv", stringsAsFactors = FALSE)
+matched_pathways_24 <- annotate_pathways(
+  significant_proteins = significant_proteins_24,
+  annotation_fun = get_pathway_annotations,
+  output_csv = "pichia_pathway_annotations_24.csv",
+  unnest_method = "unnest"  # as in your original 24h script
+)
+
+### Process Methanol 48 Hours ###
+# Read in the significant proteins file if not already loaded:
+significant_proteins_48 <- read.csv("significant_proteins_methanol_48_hours.csv", stringsAsFactors = FALSE)
+matched_pathways_48 <- annotate_pathways(
+  significant_proteins = significant_proteins_48,
+  annotation_fun = get_pathway_annotations,
+  output_csv = "pichia_pathway_annotations_48.csv",
+  unnest_method = "unnest_longer"
+)
+
+### Process Methanol 72 Hours ###
+# Read in the significant proteins file if not already loaded:
+significant_proteins_72 <- read.csv("significant_proteins_methanol_72_hours.csv", stringsAsFactors = FALSE)
+matched_pathways_72 <- annotate_pathways(
+  significant_proteins = significant_proteins_72,
+  annotation_fun = get_pathway_annotations,
+  output_csv = "pichia_pathway_annotations_72.csv",
+  unnest_method = "unnest_longer"
+)
+```
+
+# Hypergeometric test
+
+- Next, the pathways that are identified undergo pathway enrichment.
+
+- Pathways that are statistically over represented among differentially expressed proteins are identified using pathway enrichment analysis. 
+
+- This involves a hypergeometric test, which calculates the probability of observing as many or more differentially expressed proteins in each pathway as occurs in the actual data, under the assumption that proteins are distributed across pathways randomly. Here, 
+
+$$p(k,M,n,N) = \frac{\binom{n}{k} \binom{M-n}{N-k}}{\binom{M}{N}}$$
+
+- k is the number of differentially expressed proteins in a specific pathway, 
+- N is the total number of proteins annotated to that pathway in the genome, 
+- n is the total number of differentially expressed proteins detected, and 
+- M is the total number of proteins annotated to any pathway.
+
+
+- A Benjamini-Hochberg correction is then applied to adjust p-values for multiple testing.
+
+```{r}
+
+# Define the enrichment function
+perform_enrichment <- function(significant_csv, background_csv, output_csv) {
+  
+  # Load background data and significant data
+  background_data <- read.csv(background_csv, stringsAsFactors = FALSE)
+  significant_data <- read.csv(significant_csv, stringsAsFactors = FALSE)
+  
+  # Filter out rows where Pathways is NA or "NULL"
+  background_data_filtered <- background_data %>%
+    filter(!is.na(Pathways) & Pathways != "NULL")
+  
+  significant_data_filtered <- significant_data %>%
+    filter(!is.na(Pathways) & Pathways != "NULL")
+  
+  # Count occurrences of each pathway in the background data
+  background_counts <- background_data_filtered %>%
+    group_by(Pathways) %>%
+    summarise(Count = n(), .groups = "drop")
+  
+  # Count occurrences in the significant data
+  significant_counts <- significant_data_filtered %>%
+    group_by(Pathways) %>%
+    summarise(Count = n(), .groups = "drop")
+  
+  # Merge counts by pathway (using suffixes to distinguish)
+  enrichment_data <- left_join(significant_counts, background_counts, by = "Pathways", 
+                               suffix = c(".significant", ".background"))
+  
+  # Replace any NA counts with zero
+  enrichment_data <- enrichment_data %>%
+    mutate(
+      Count.significant = ifelse(is.na(Count.significant), 0, Count.significant),
+      Count.background = ifelse(is.na(Count.background), 0, Count.background)
+    )
+  
+  # Calculate total numbers:
+  # M: total number of proteins with pathway annotation in the background
+  # n: total number of significant proteins with pathway annotation
+  M <- sum(background_counts$Count)
+  n <- sum(significant_counts$Count)
+  
+  # Perform the hypergeometric test for each pathway.
+  # For each pathway, k = Count.significant and N = Count.background.
+  enrichment_data <- enrichment_data %>%
+    mutate(
+      p_value = mapply(function(k, N) {
+        phyper(k - 1, N, M - N, n, lower.tail = FALSE)
+      }, k = Count.significant, N = Count.background)
+    )
+  
+  # Adjust p-values using the Benjamini-Hochberg method
+  enrichment_data$p_adjust <- p.adjust(enrichment_data$p_value, method = "BH")
+  
+  # Filter for significant pathways (adjusted p-value < 0.05)
+  significant_pathways <- enrichment_data %>% filter(p_adjust < 0.05)
+  
+  # Save the enrichment results to a CSV file
+  write.csv(significant_pathways, output_csv, row.names = FALSE)
+  
+  # Print and return the significant enrichment results
+  print(significant_pathways)
+  return(significant_pathways)
+}
+
+### Define the background file path (adjust the path as needed) ###
+background_file_path <- "data/proteome_background_pathway_annotations.csv"
+
+### Now, call the function for each condition ###
+
+# Enrichment for Methanol 24 Hours
+enrichment_results_24 <- perform_enrichment(
+  significant_csv = "pichia_pathway_annotations_24.csv",
+  background_csv = background_file_path,
+  output_csv = "pathway_enrichment_results_24.csv"
+)
+
+# Enrichment for Methanol 48 Hours
+enrichment_results_48 <- perform_enrichment(
+  significant_csv = "pichia_pathway_annotations_48.csv",
+  background_csv = background_file_path,
+  output_csv = "pathway_enrichment_results_48.csv"
+)
+
+# Enrichment for Methanol 72 Hours
+enrichment_results_72 <- perform_enrichment(
+  significant_csv = "pichia_pathway_annotations_72.csv",
+  background_csv = background_file_path,
+  output_csv = "pathway_enrichment_results_72.csv"
+)
+
+```
+
+# Venn digram of methanol expression 
+
+- Shows the overlap of significantly different proteins between the methanol feeding data sets
+
+- They all have the same number of proteins identified in the data set. 
+
+```{r}
+# Extracting protein identifiers from each dataset
+proteins_24 <- unique(significant_proteins_24$Protein)
+proteins_48 <- unique(significant_proteins_48$Protein)
+proteins_72 <- unique(significant_proteins_72$Protein)
+
+# Generate a Venn diagram for the three datasets
+venn.plot <- draw.triple.venn(
+    area1 = length(proteins_24),
+    area2 = length(proteins_48),
+    area3 = length(proteins_72),
+    n12 = length(intersect(proteins_24, proteins_48)),
+    n23 = length(intersect(proteins_48, proteins_72)),
+    n13 = length(intersect(proteins_24, proteins_72)),
+    n123 = length(Reduce(intersect, list(proteins_24, proteins_48, proteins_72))),
+    category = c("Methanol 24 hours", "Methanol 48 hours", "Methanol 72 hours"),
+    fill = c("#00BA38", "#00BFC4", "#F564E3"),  # Use custom colors
+    lty = 1,  # Set line type to 1 for solid lines
+    lwd = 2,  # Set line width for circle borders
+    cex = 3,  # Increase text size within the circles
+    fontface = "bold",  # Make numbers inside the circles bold
+    cat.cex = 2,  # Increase category text size
+    cat.pos = c(-15, 15, 180),  # Adjust category label positions:
+    cat.dist = 0.05,  # Adjust the distance of category labels from the center of the diagram
+    cat.col = rep("black", 3),  # Set category label colors to black
+    cat.fontface = "bold"  # Make category names bold
+)
+
+# Save the Venn diagram as a PNG file
+png("VennDiagram.png", width = 900, height = 900)  # Make the dimensions square
+grid.draw(venn.plot)
+dev.off() # Close the device after drawing
+
+# Print the Venn diagram
+print(venn.plot)
+
+```
+
+# Q-Q plot creation 
+
+- This compares the expected and observed p-values between the singificantly different datasets created by comparing glycerol feeding compared to the other 4 sample types. 
+
+- The function first extracts and sorts the non-missing p-values from the results, calculates their -log10 transformation, and computes the expected -log10(p-values) under a uniform distribution based on their rank. Then, it plots these observed versus expected values with ggplot2, adding a red dashed line (slope = 1) to indicate where the points would lie if the observed p-values perfectly matched the uniform expectation.
+
+
+
+```{r}
+# Define a theme function for reuse
+custom_theme <- theme_minimal() +
+  theme(
+    plot.title = element_text(size = 24, hjust = 0.5),
+    axis.text = element_text(size = 22),
+    axis.title = element_text(size = 22)
+  )
+
+# Function to create a Q-Q plot of p-values
+create_qq_plot <- function(results_df, comparison_name) {
+  # Remove NA p-values
+  p_values <- results_df$P.Value[!is.na(results_df$P.Value)]
+  
+  # Number of p-values
+  n <- length(p_values)
+  
+  # Expected p-values under the null hypothesis (uniform distribution)
+  expected_p <- (rank(p_values, ties.method = "first") - 0.5) / n
+  
+  # Create a data frame for plotting
+  qq_data <- data.frame(
+    Observed = -log10(sort(p_values)),
+    Expected = -log10(expected_p)
+  )
+  
+  # Create the Q-Q plot
+  qq_plot <- ggplot(qq_data, aes(x = Expected, y = Observed)) +
+    geom_point(color = "blue", alpha = 0.5, size = 2) +  # Adjust point size as needed
+    geom_abline(intercept = 0, slope = 1, color = "red", linetype = "dashed") +
+    labs(
+      title = paste(comparison_name),
+      x = "Expected -log10(P-value)",
+      y = "Observed -log10(P-value)"
+    ) +
+    custom_theme  # Apply your custom theme here
+  
+  return(qq_plot)
+}
+
+# Generate Q-Q plots for each comparison
+qq_plot_rest <- create_qq_plot(res_EB_rest$results, "Glycerol Feeding vs. Glycerol Resting")
+qq_plot_24   <- create_qq_plot(res_EB_24$results, "Glycerol Feeding vs. 24 Hours Methanol Feeding")
+qq_plot_48   <- create_qq_plot(res_EB_48$results, "Glycerol Feeding vs. 48 Hours Methanol Feeding")
+qq_plot_72   <- create_qq_plot(res_EB_72$results, "Glycerol Feeding vs. 72 Hours Methanol Feeding")
+# Print the Q-Q plots
+print(qq_plot_rest)
+print(qq_plot_24)
+print(qq_plot_48)
+print(qq_plot_72)
+
+# Optionally, arrange all plots together
+grid.arrange(qq_plot_rest, qq_plot_24, qq_plot_48, qq_plot_72, ncol = 2)
+```
+
+# Mean-Variance plot
+
+- Allows visual assessment of how residual variability changes with average expression levels between our sample group comparisons.  
+
+- The code first extracts the average log-expression (Amean) and computes the residual standard deviation (sdev) from the moderated limma fit (fit2) and stores them in a data frame. Then, it plots these values with ggplot2—Amean on the x-axis and sdev on the y-axis—to visualize the mean-variance trend, using a custom theme for formatting.
+
+```{r}
+# Function to extract data for plotting
+extract_sa_data <- function(fit2) {
+  # Residual standard deviations
+  sdev <- sqrt(fit2$sigma^2)
+  
+  # Average log-expression (Amean)
+  Amean <- fit2$Amean
+  
+  # Create data frame
+  data.frame(Amean = Amean, sdev = sdev)
+}
+
+# Define a custom theme
+custom_theme <- theme_minimal() +
+  theme(
+    plot.title = element_text(size = 24, hjust = 0.5),
+    axis.text = element_text(size = 22),
+    axis.title = element_text(size = 22)
+  )
+
+# Function to create SA plot
+create_sa_plot <- function(data, comparison_name) {
+  ggplot(data, aes(x = Amean, y = sdev)) +
+    geom_point(alpha = 0.5, size = 1) +
+    labs(
+      title = comparison_name,
+      x = "Average Log-Expression",
+      y = "Residual Standard Deviation"
+    ) +
+    custom_theme
+}
+
+# Generate data frames for each fit
+sa_data_rest <- extract_sa_data(res_EB_rest$fit2)
+sa_plot_rest <- create_sa_plot(sa_data_rest, "Glycerol Feeding vs. Glycerol Resting")
+sa_data_24 <- extract_sa_data(res_EB_24$fit2)
+sa_plot_24 <- create_sa_plot(sa_data_24, "Glycerol Feeding vs. 24 Hours Methanol Feeding")
+sa_data_48 <- extract_sa_data(res_EB_48$fit2)
+sa_plot_48 <- create_sa_plot(sa_data_48, "Glycerol Feeding vs. 48 Hours Methanol Feeding")
+sa_data_72 <- extract_sa_data(res_EB_72$fit2)
+sa_plot_72 <- create_sa_plot(sa_data_72, "Glycerol Feeding vs. 72 Hours Methanol Feeding")
+
+
+# Arrange the plots
+grid.arrange(sa_plot_rest, sa_plot_24, sa_plot_48, sa_plot_72, ncol = 2)
+```
+
+# Prepare data for multivariate analysis 
+
+- This is to compare the groups of the data as opposed to looking at individual proteins to confirmt that there is statitical differences between the.
+
+```{r}
+# Map sample names: from "S1", "S2", ... to "Sample_1", "Sample_2", etc.
+sample_mapping <- setNames(paste0("Sample_", 1:10), paste0("S", 1:10))
+sample_info$Sample <- sample_mapping[sample_info$Sample]
+
+# Ensure the data matrix column names match the sample names in sample_info
+data_matrix <- data_imputed
+
+# Create new names by removing the leading "S" and prepending "Sample_"
+original_names <- colnames(data_matrix)  # e.g., "S10", "S1", "S2", ...
+# Remove the first character ("S") and add "Sample_"
+new_names <- paste0("Sample_", substring(original_names, 2))
+colnames(data_matrix) <- new_names
+
+cat("Updated data matrix column names:\n")
+print(colnames(data_matrix))
+
+# Get the updated sample names from the data matrix
+sample_names <- colnames(data_matrix)
+
+# Reorder sample_info to match the order of sample_names
+sample_info_ordered <- sample_info[match(sample_names, sample_info$Sample), ]
+
+# Verify that the sample names match exactly
+if (all(sample_info_ordered$Sample == sample_names)) {
+  cat("Sample names match correctly!\n")
+} else {
+  stop("Sample names do not match. Check your data!")
+}
+
+# View the ordered sample info
+cat("Ordered sample info:\n")
+print(sample_info_ordered)
+
+
+
+```
+
+# Permanova and pairwise permanova
+
+```{r}
+# Extract group labels as a factor from the ordered sample info
+group_labels <- as.factor(sample_info_ordered$Group)
+
+# Transpose data_matrix so samples are rows and proteins are columns
+data_matrix_t <- t(data_matrix)
+
+# Calculate distance matrix using Bray-Curtis
+distance_matrix <- vegdist(data_matrix_t, method = "bray")
+
+# Perform PERMANOVA (using adonis.II from vegan)
+adonis_result <- adonis2(distance_matrix ~ group_labels, permutations = 999)
+cat("PERMANOVA Results:\n")
+print(adonis_result)
+
+```
+
+# Betadispersion
+
+```{r}
+# Test homogeneity of dispersion among groups
+betadisp_result <- betadisper(distance_matrix, group_labels)
+cat("ANOVA of Betadispersion:\n")
+print(anova(betadisp_result))
+
+# Plot distances-to-centroid
+plot(betadisp_result)
+
+```
+
+# PCoA/Classical MDS 
+
+```{r}
+# Perform classical MDS (cmdscale) on the distance matrix
+mds_result <- cmdscale(distance_matrix, k = 2)
+mds_df <- data.frame(MDS1 = mds_result[, 1],
+                     MDS2 = mds_result[, 2],
+                     Group = group_labels)
+
+# Plot the MDS result
+p_mds <- ggplot(mds_df, aes(x = MDS1, y = MDS2, color = Group)) +
+  geom_point(size = 4) +
+  labs(title = "MDS Plot of Protein Expression Profiles",
+       x = "PCoA1", y = "PCoA2") +
+  theme_minimal()
+print(p_mds)
+
+```
+
+# NMDS
+
+```{r}
+# Set the seed for reproducibility of NMDS
+set.seed(111)
+
+# Run NMDS on the transposed data (using Euclidean or another distance as needed)
+set.seed(123)  # for reproducibility
+nmds_result <- metaMDS(data_matrix_t, distance = 'bray', k = 2, trymax = 100)
+plot(nmds_result)
+
+# Assuming 'nmds_result' contains the NMDS coordinates
+nmds_df <- data.frame(
+  NMDS1 = nmds_result$points[, 1],
+  NMDS2 = nmds_result$points[, 2],
+  Group = group_labels  # ensure this variable contains the correct group labels as in your ANOSIM analysis
+)
+
+# Plot the NMDS results without adding sample labels
+ggplot(nmds_df, aes(x = NMDS1, y = NMDS2, color = Group)) +
+  geom_point(size = 4) +  # Adjust size and transparency as needed
+  labs(
+    title = "NMDS Plot of Protein Expression Profiles",
+    x = "NMDS1",  # Custom label for the X-axis
+    y = "NMDS2"   # Custom label for the Y-axis
+  ) +
+  # Define a custom theme for larger font sizes based on your preferences
+  theme_minimal() +
+  theme(
+    plot.title = element_text(size = 16, hjust = 0.5),
+    axis.text = element_text(size = 14),   # Font size for axis text
+    axis.title = element_text(size = 14),  # Font size for axis titles
+    legend.position = "right",
+    legend.title = element_text(size = 20),  # Ensure legend title matches axis titles
+    legend.text = element_text(size = 20)    # Adjust legend text size as appropriate
+  )
+```
+
+# ANOSIM
+
+```{r}
+# Set seed for reproducibility
+set.seed(111)
+anosim_result <- anosim(distance_matrix, group_labels, permutations = 999)
+cat("ANOSIM Results:\n")
+print(anosim_result)
+
+# Plot ANOSIM result with customized graphical parameters
+par(mar = c(5, 5, 4, 2) + 0.1, mfrow = c(1, 1), cex.main = 1.6, cex.axis = 1.4, cex.lab = 1.4)
+plot(anosim_result,
+     main = "ANOSIM Results",
+     xlab = "Groups",
+     ylab = "Dissimilarity",
+     pch = 19,
+     col = as.numeric(group_labels))
+
+```
+
+
+
+
