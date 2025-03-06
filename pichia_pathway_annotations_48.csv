@@ -1,0 +1,1445 @@
+"KEGG_ID","Pathways","PathwayName"
+"ppa:PAS_chr1-4_0699",NA,NA
+"A0A1G4KQU5",NA,NA
+"F2QWE8",NA,NA
+"ppa:PAS_chr3_1071",NA,NA
+"ppa:PAS_chr4_0303",NA,NA
+"ppa:PAS_chr4_0844","ppa04141","Protein processing in endoplasmic reticulum - Komagataella phaffii"
+"ppa:PAS_chr3_1028","ppa00010","Glycolysis / Gluconeogenesis - Komagataella phaffii"
+"ppa:PAS_chr3_1028","ppa00071","Fatty acid degradation - Komagataella phaffii"
+"ppa:PAS_chr3_1028","ppa00350","Tyrosine metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_1028","ppa00620","Pyruvate metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_1028","ppa00680","Methane metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_1028","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_1028","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr3_1028","ppa01200","Carbon metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-1_0417",NA,NA
+"ppa:PAS_chr3_0361","ppa00760","Nicotinate and nicotinamide metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0361","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_0361","ppa01240","Biosynthesis of cofactors - Komagataella phaffii"
+"ppa:PAS_chr2-2_0131","ppa00380","Tryptophan metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-2_0131","ppa00630","Glyoxylate and dicarboxylate metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-2_0131","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr2-2_0131","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr2-2_0131","ppa01200","Carbon metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-2_0131","ppa04011","MAPK signaling pathway - yeast - Komagataella phaffii"
+"ppa:PAS_chr2-2_0131","ppa04146","Peroxisome - Komagataella phaffii"
+"ppa:PAS_chr1-4_0392","ppa00750","Vitamin B6 metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-4_0392","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr1-4_0392","ppa01240","Biosynthesis of cofactors - Komagataella phaffii"
+"ppa:PAS_chr2-2_0236",NA,NA
+"ppa:PAS_chr1-3_0152",NA,NA
+"ppa:PAS_chr2-2_0254",NA,NA
+"ppa:PAS_chr2-1_0649",NA,NA
+"ppa:PAS_chr4_0113",NA,NA
+"A0A1G4KQ11",NA,NA
+"ppa:PAS_chr4_0602",NA,NA
+"ppa:PAS_chr2-1_0504","ppa04146","Peroxisome - Komagataella phaffii"
+"ppa:PAS_chr3_0578",NA,NA
+"ppa:PAS_chr4_0514",NA,NA
+"ppa:PAS_chr4_0532",NA,NA
+"ppa:PAS_chr3_0841","ppa00051","Fructose and mannose metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0841","ppa00561","Glycerolipid metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0841","ppa00680","Methane metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0841","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_0841","ppa01200","Carbon metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0470","ppa00280","Valine, leucine and isoleucine degradation - Komagataella phaffii"
+"ppa:PAS_chr4_0470","ppa00410","beta-Alanine metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0470","ppa00562","Inositol phosphate metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0470","ppa00640","Propanoate metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0470","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0470","ppa01200","Carbon metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0561",NA,NA
+"ppa:PAS_chr4_0390",NA,NA
+"ppa:PAS_chr2-1_0615",NA,NA
+"ppa:PAS_chr4_0664","ppa00270","Cysteine and methionine metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0664","ppa00670","One carbon pool by folate - Komagataella phaffii"
+"ppa:PAS_chr4_0664","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0664","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr4_0664","ppa04981","Folate transport and metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0749","ppa00230","Purine metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0749","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_0648","ppa00730","Thiamine metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0648","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_0648","ppa01240","Biosynthesis of cofactors - Komagataella phaffii"
+"ppa:PAS_chr2-2_0454",NA,NA
+"ppa:PAS_chr2-2_0084","ppa00730","Thiamine metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-2_0084","ppa00790","Folate biosynthesis - Komagataella phaffii"
+"ppa:PAS_chr2-2_0084","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr2-2_0084","ppa01240","Biosynthesis of cofactors - Komagataella phaffii"
+"ppa:PAS_chr3_0168","ppa04144","Endocytosis - Komagataella phaffii"
+"ppa:PAS_chr3_0867","ppa00680","Methane metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0867","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_0867","ppa01200","Carbon metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-1_0077",NA,NA
+"ppa:PAS_chr2-2_0108",NA,NA
+"ppa:PAS_chr4_0488",NA,NA
+"F2R002",NA,NA
+"ppa:PAS_chr1-3_0013",NA,NA
+"ppa:PAS_chr4_0847","ppa00500","Starch and sucrose metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0847","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0847","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr1-1_0204",NA,NA
+"ppa:PAS_chr4_0842","ppa00620","Pyruvate metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0842","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr2-1_0472","ppa00010","Glycolysis / Gluconeogenesis - Komagataella phaffii"
+"ppa:PAS_chr2-1_0472","ppa00071","Fatty acid degradation - Komagataella phaffii"
+"ppa:PAS_chr2-1_0472","ppa00350","Tyrosine metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0472","ppa00620","Pyruvate metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0472","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr2-1_0472","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr2-2_0055",NA,NA
+"ppa:PAS_chr3_1073","ppa04146","Peroxisome - Komagataella phaffii"
+"ppa:PAS_chr4_0287",NA,NA
+"ppa:PAS_chr3_0511",NA,NA
+"ppa:PAS_chr3_0440",NA,NA
+"ppa:PAS_chr2-1_0667",NA,NA
+"ppa:PAS_chr4_0347",NA,NA
+"ppa:PAS_chr1-1_0051",NA,NA
+"ppa:PAS_chr1-3_0198",NA,NA
+"ppa:PAS_chr3_0156","ppa00740","Riboflavin metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0156","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_0156","ppa01240","Biosynthesis of cofactors - Komagataella phaffii"
+"ppa:PAS_chr1-3_0049",NA,NA
+"ppa:PAS_chr1-1_0265",NA,NA
+"ppa:PAS_chr2-1_0867",NA,NA
+"ppa:PAS_chr1-4_0668",NA,NA
+"ppa:PAS_chr2-1_0065","ppa00520","Amino sugar and nucleotide sugar metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0065","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr1-4_0086",NA,NA
+"ppa:PAS_chr2-1_0412",NA,NA
+"F2QY59",NA,NA
+"ppa:PAS_chr4_0677","ppa00250","Alanine, aspartate and glutamate metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0677","ppa00280","Valine, leucine and isoleucine degradation - Komagataella phaffii"
+"ppa:PAS_chr4_0677","ppa00410","beta-Alanine metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0677","ppa00640","Propanoate metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0677","ppa00650","Butanoate metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0677","ppa01100","Metabolic pathways - Komagataella phaffii"
+"F2QXJ0",NA,NA
+"ppa:PAS_chr2-1_0715","ppa04146","Peroxisome - Komagataella phaffii"
+"ppa:PAS_chr4_0050","ppa00400","Phenylalanine, tyrosine and tryptophan biosynthesis - Komagataella phaffii"
+"ppa:PAS_chr4_0050","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0050","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr4_0050","ppa01230","Biosynthesis of amino acids - Komagataella phaffii"
+"ppa:PAS_chr3_0064",NA,NA
+"ppa:PAS_chr1-4_0449",NA,NA
+"ppa:PAS_chr1-1_0415",NA,NA
+"F2QT62",NA,NA
+"ppa:PAS_chr2-2_0208",NA,NA
+"ppa:PAS_chr4_0147","ppa00350","Tyrosine metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0147","ppa00360","Phenylalanine metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0147","ppa00400","Phenylalanine, tyrosine and tryptophan biosynthesis - Komagataella phaffii"
+"ppa:PAS_chr4_0147","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0147","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr2-2_0177",NA,NA
+"ppa:PAS_chr4_0063","ppa00100","Steroid biosynthesis - Komagataella phaffii"
+"ppa:PAS_chr4_0063","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0063","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr2-1_0110","ppa00051","Fructose and mannose metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0110","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr1-1_0100","ppa03010","Ribosome - Komagataella phaffii"
+"ppa:PAS_chr1-3_0119",NA,NA
+"ppa:PAS_chr1-1_0297",NA,NA
+"ppa:PAS_chr3_0043","ppa04146","Peroxisome - Komagataella phaffii"
+"ppa:PAS_chr4_0759","ppa04146","Peroxisome - Komagataella phaffii"
+"ppa:PAS_chr2-1_0280","ppa02010","ABC transporters - Komagataella phaffii"
+"ppa:PAS_chr3_0059","ppa00190","Oxidative phosphorylation - Komagataella phaffii"
+"ppa:PAS_chr3_0059","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr1-1_0441",NA,NA
+"ppa:PAS_chr2-1_0624",NA,NA
+"ppa:PAS_chr1-4_0349",NA,NA
+"ppa:PAS_chr2-1_0189",NA,NA
+"ppa:PAS_chr4_0201","ppa03040","Spliceosome - Komagataella phaffii"
+"ppa:PAS_chr4_0266","ppa00051","Fructose and mannose metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0266","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr2-1_0318",NA,NA
+"ppa:PAS_chr3_0375",NA,NA
+"ppa:PAS_chr1-3_0169",NA,NA
+"A0A1G4KPJ1",NA,NA
+"ppa:PAS_chr3_0874",NA,NA
+"ppa:PAS_chr2-2_0279","ppa00230","Purine metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-2_0279","ppa00232","Caffeine metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-2_0279","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0578","ppa00910","Nitrogen metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0578","ppa01100","Metabolic pathways - Komagataella phaffii"
+"F2QQK5",NA,NA
+"ppa:PAS_chr4_0271",NA,NA
+"ppa:PAS_chr2-1_0573",NA,NA
+"ppa:PAS_chr2-1_0462",NA,NA
+"ppa:PAS_chr2-1_0853","ppa00010","Glycolysis / Gluconeogenesis - Komagataella phaffii"
+"ppa:PAS_chr2-1_0853","ppa00053","Ascorbate and aldarate metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0853","ppa00071","Fatty acid degradation - Komagataella phaffii"
+"ppa:PAS_chr2-1_0853","ppa00280","Valine, leucine and isoleucine degradation - Komagataella phaffii"
+"ppa:PAS_chr2-1_0853","ppa00310","Lysine degradation - Komagataella phaffii"
+"ppa:PAS_chr2-1_0853","ppa00330","Arginine and proline metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0853","ppa00340","Histidine metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0853","ppa00380","Tryptophan metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0853","ppa00410","beta-Alanine metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0853","ppa00561","Glycerolipid metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0853","ppa00620","Pyruvate metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0853","ppa00770","Pantothenate and CoA biosynthesis - Komagataella phaffii"
+"ppa:PAS_chr2-1_0853","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr2-1_0853","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr2-1_0853","ppa01240","Biosynthesis of cofactors - Komagataella phaffii"
+"ppa:PAS_chr4_0115","ppa04814","Motor proteins - Komagataella phaffii"
+"ppa:PAS_chr4_0815","ppa00020","Citrate cycle (TCA cycle) - Komagataella phaffii"
+"ppa:PAS_chr4_0815","ppa00270","Cysteine and methionine metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0815","ppa00620","Pyruvate metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0815","ppa00630","Glyoxylate and dicarboxylate metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0815","ppa00710","Carbon fixation by Calvin cycle - Komagataella phaffii"
+"ppa:PAS_chr4_0815","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0815","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr4_0815","ppa01200","Carbon metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-4_0531",NA,NA
+"ppa:PAS_chr1-4_0314","ppa00900","Terpenoid backbone biosynthesis - Komagataella phaffii"
+"ppa:PAS_chr1-4_0314","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr1-4_0314","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr2-1_0750",NA,NA
+"ppa:PAS_chr1-4_0042","ppa00010","Glycolysis / Gluconeogenesis - Komagataella phaffii"
+"ppa:PAS_chr1-4_0042","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr1-4_0042","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr2-1_0786","ppa00564","Glycerophospholipid metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0803",NA,NA
+"ppa:PAS_chr1-1_0331",NA,NA
+"ppa:PAS_chr4_0974","ppa00220","Arginine biosynthesis - Komagataella phaffii"
+"ppa:PAS_chr4_0974","ppa00250","Alanine, aspartate and glutamate metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0974","ppa00270","Cysteine and methionine metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0974","ppa00330","Arginine and proline metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0974","ppa00350","Tyrosine metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0974","ppa00360","Phenylalanine metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0974","ppa00400","Phenylalanine, tyrosine and tryptophan biosynthesis - Komagataella phaffii"
+"ppa:PAS_chr4_0974","ppa00710","Carbon fixation by Calvin cycle - Komagataella phaffii"
+"ppa:PAS_chr4_0974","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0974","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr4_0974","ppa01200","Carbon metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0974","ppa01210","2-Oxocarboxylic acid metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0974","ppa01230","Biosynthesis of amino acids - Komagataella phaffii"
+"ppa:PAS_chr4_0572","ppa00040","Pentose and glucuronate interconversions - Komagataella phaffii"
+"ppa:PAS_chr4_0572","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_0390",NA,NA
+"ppa:PAS_chr2-1_0553",NA,NA
+"ppa:PAS_chr2-2_0113","ppa00562","Inositol phosphate metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-2_0113","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr2-2_0113","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr1-1_0273","ppa04011","MAPK signaling pathway - yeast - Komagataella phaffii"
+"ppa:PAS_chr1-1_0273","ppa04111","Cell cycle - yeast - Komagataella phaffii"
+"ppa:PAS_chr2-2_0261",NA,NA
+"ppa:PAS_chr3_0640",NA,NA
+"ppa:PAS_chr3_0602","ppa00062","Fatty acid elongation - Komagataella phaffii"
+"ppa:PAS_chr3_0602","ppa01040","Biosynthesis of unsaturated fatty acids - Komagataella phaffii"
+"ppa:PAS_chr3_0602","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_0602","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr3_0602","ppa01212","Fatty acid metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0154",NA,NA
+"ppa:PAS_FragB_0019",NA,NA
+"ppa:PAS_chr4_0081","ppa00740","Riboflavin metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0081","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0081","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr4_0081","ppa01240","Biosynthesis of cofactors - Komagataella phaffii"
+"ppa:PAS_chr1-4_0486",NA,NA
+"ppa:PAS_chr1-3_0102",NA,NA
+"ppa:PAS_chr2-2_0338","ppa00030","Pentose phosphate pathway - Komagataella phaffii"
+"ppa:PAS_chr2-2_0338","ppa00710","Carbon fixation by Calvin cycle - Komagataella phaffii"
+"ppa:PAS_chr2-2_0338","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr2-2_0338","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr2-2_0338","ppa01200","Carbon metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-2_0338","ppa01230","Biosynthesis of amino acids - Komagataella phaffii"
+"ppa:PAS_chr3_0167","ppa00740","Riboflavin metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0167","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_0167","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr3_0167","ppa01240","Biosynthesis of cofactors - Komagataella phaffii"
+"ppa:PAS_chr2-1_0315",NA,NA
+"ppa:PAS_chr3_0843","ppa00730","Thiamine metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0843","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_0843","ppa01240","Biosynthesis of cofactors - Komagataella phaffii"
+"ppa:PAS_chr3_0744","ppa00040","Pentose and glucuronate interconversions - Komagataella phaffii"
+"ppa:PAS_chr3_0744","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0140",NA,NA
+"ppa:PAS_chr3_0779","ppa04120","Ubiquitin mediated proteolysis - Komagataella phaffii"
+"ppa:PAS_chr4_0043","ppa00010","Glycolysis / Gluconeogenesis - Komagataella phaffii"
+"ppa:PAS_chr4_0043","ppa00053","Ascorbate and aldarate metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0043","ppa00071","Fatty acid degradation - Komagataella phaffii"
+"ppa:PAS_chr4_0043","ppa00280","Valine, leucine and isoleucine degradation - Komagataella phaffii"
+"ppa:PAS_chr4_0043","ppa00310","Lysine degradation - Komagataella phaffii"
+"ppa:PAS_chr4_0043","ppa00330","Arginine and proline metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0043","ppa00340","Histidine metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0043","ppa00380","Tryptophan metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0043","ppa00410","beta-Alanine metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0043","ppa00561","Glycerolipid metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0043","ppa00620","Pyruvate metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0043","ppa00770","Pantothenate and CoA biosynthesis - Komagataella phaffii"
+"ppa:PAS_chr4_0043","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0043","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr4_0043","ppa01240","Biosynthesis of cofactors - Komagataella phaffii"
+"ppa:PAS_chr3_0588",NA,NA
+"ppa:PAS_chr1-4_0041",NA,NA
+"ppa:PAS_chr3_1032","ppa03008","Ribosome biogenesis in eukaryotes - Komagataella phaffii"
+"ppa:PAS_chr1-1_0339",NA,NA
+"ppa:PAS_chr2-1_0314",NA,NA
+"ppa:PAS_chr2-1_0324",NA,NA
+"ppa:PAS_chr3_0957","ppa00100","Steroid biosynthesis - Komagataella phaffii"
+"ppa:PAS_chr3_0957","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_0957","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr1-4_0425","ppa00785","Lipoic acid metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-4_0425","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr1-4_0425","ppa01240","Biosynthesis of cofactors - Komagataella phaffii"
+"ppa:PAS_FragB_0039","ppa03440","Homologous recombination - Komagataella phaffii"
+"ppa:PAS_chr4_0212","ppa00030","Pentose phosphate pathway - Komagataella phaffii"
+"ppa:PAS_chr4_0212","ppa00710","Carbon fixation by Calvin cycle - Komagataella phaffii"
+"ppa:PAS_chr4_0212","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0212","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr4_0212","ppa01200","Carbon metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0212","ppa01230","Biosynthesis of amino acids - Komagataella phaffii"
+"ppa:PAS_chr1-3_0301",NA,NA
+"ppa:PAS_chr2-1_0247",NA,NA
+"ppa:PAS_chr1-1_0491","ppa03060","Protein export - Komagataella phaffii"
+"ppa:PAS_chr2-2_0417","ppa03010","Ribosome - Komagataella phaffii"
+"ppa:PAS_chr3_0714",NA,NA
+"ppa:PAS_chr2-1_0172",NA,NA
+"ppa:PAS_chr2-1_0052",NA,NA
+"ppa:PAS_chr1-1_0226","ppa04138","Autophagy - yeast - Komagataella phaffii"
+"ppa:PAS_chr4_0624","ppa00010","Glycolysis / Gluconeogenesis - Komagataella phaffii"
+"ppa:PAS_chr4_0624","ppa00051","Fructose and mannose metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0624","ppa00052","Galactose metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0624","ppa00500","Starch and sucrose metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0624","ppa00520","Amino sugar and nucleotide sugar metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0624","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0624","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr4_0624","ppa01200","Carbon metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0624","ppa01250","Biosynthesis of nucleotide sugars - Komagataella phaffii"
+"ppa:PAS_chr2-1_0313","ppa00650","Butanoate metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0313","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr2-2_0330",NA,NA
+"ppa:PAS_chr4_0559",NA,NA
+"ppa:PAS_chr3_0624","ppa04011","MAPK signaling pathway - yeast - Komagataella phaffii"
+"ppa:PAS_chr3_0624","ppa04111","Cell cycle - yeast - Komagataella phaffii"
+"ppa:PAS_chr3_0624","ppa04113","Meiosis - yeast - Komagataella phaffii"
+"ppa:PAS_chr3_0912",NA,NA
+"ppa:PAS_chr1-1_0176",NA,NA
+"ppa:PAS_chr1-1_0066",NA,NA
+"ppa:PAS_chr3_0078",NA,NA
+"ppa:PAS_chr3_0338",NA,NA
+"ppa:PAS_chr3_0360",NA,NA
+"ppa:PAS_chr1-3_0235",NA,NA
+"ppa:PAS_chr2-1_0716","ppa00260","Glycine, serine and threonine metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0716","ppa00860","Porphyrin metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0716","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr2-1_0716","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr2-1_0716","ppa01240","Biosynthesis of cofactors - Komagataella phaffii"
+"ppa:PAS_chr3_1020",NA,NA
+"ppa:PAS_chr2-1_0652",NA,NA
+"ppa:PAS_chr3_1210",NA,NA
+"ppa:PAS_chr1-4_0613",NA,NA
+"ppa:PAS_chr2-2_0167",NA,NA
+"ppa:PAS_chr4_0548",NA,NA
+"ppa:PAS_chr2-1_0109",NA,NA
+"ppa:PAS_chr2-1_0742",NA,NA
+"ppa:PAS_chr3_0407",NA,NA
+"ppa:PAS_chr1-1_0198",NA,NA
+"ppa:PAS_chr1-3_0186",NA,NA
+"ppa:PAS_chr1-1_0356","ppa00051","Fructose and mannose metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-1_0356","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0855",NA,NA
+"ppa:PAS_chr1-4_0264","ppa00010","Glycolysis / Gluconeogenesis - Komagataella phaffii"
+"ppa:PAS_chr1-4_0264","ppa00030","Pentose phosphate pathway - Komagataella phaffii"
+"ppa:PAS_chr1-4_0264","ppa00052","Galactose metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-4_0264","ppa00230","Purine metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-4_0264","ppa00500","Starch and sucrose metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-4_0264","ppa00520","Amino sugar and nucleotide sugar metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-4_0264","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr1-4_0264","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr1-4_0264","ppa01250","Biosynthesis of nucleotide sugars - Komagataella phaffii"
+"ppa:PAS_chr2-2_0200",NA,NA
+"F2QWE7",NA,NA
+"A0A1G4KQM1",NA,NA
+"ppa:PAS_chr1-1_0107","ppa00220","Arginine biosynthesis - Komagataella phaffii"
+"ppa:PAS_chr1-1_0107","ppa00250","Alanine, aspartate and glutamate metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-1_0107","ppa00910","Nitrogen metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-1_0107","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr1-4_0393","ppa00750","Vitamin B6 metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-4_0393","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr1-4_0393","ppa01240","Biosynthesis of cofactors - Komagataella phaffii"
+"ppa:PAS_chr3_0413",NA,NA
+"ppa:PAS_chr4_0181",NA,NA
+"ppa:PAS_chr2-1_0249",NA,NA
+"ppa:PAS_chr1-1_0403",NA,NA
+"ppa:PAS_chr4_0997",NA,NA
+"ppa:PAS_chr3_0469","ppa04011","MAPK signaling pathway - yeast - Komagataella phaffii"
+"ppa:PAS_chr2-2_0290","ppa00860","Porphyrin metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-2_0290","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr2-2_0127",NA,NA
+"ppa:PAS_chr2-2_0089",NA,NA
+"F2QV37",NA,NA
+"ppa:PAS_chr1-3_0154","ppa00350","Tyrosine metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-3_0154","ppa00360","Phenylalanine metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-3_0154","ppa00400","Phenylalanine, tyrosine and tryptophan biosynthesis - Komagataella phaffii"
+"ppa:PAS_chr1-3_0154","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr1-3_0154","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr4_0021",NA,NA
+"ppa:PAS_chr3_1115","ppa00051","Fructose and mannose metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_1115","ppa00520","Amino sugar and nucleotide sugar metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_1115","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_1115","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr3_1115","ppa01240","Biosynthesis of cofactors - Komagataella phaffii"
+"ppa:PAS_chr3_1115","ppa01250","Biosynthesis of nucleotide sugars - Komagataella phaffii"
+"ppa:PAS_chr1-1_0490","ppa00040","Pentose and glucuronate interconversions - Komagataella phaffii"
+"ppa:PAS_chr1-1_0490","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0476",NA,NA
+"ppa:PAS_chr1-1_0282","ppa00230","Purine metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-1_0282","ppa00240","Pyrimidine metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-1_0282","ppa00480","Glutathione metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-1_0282","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr1-1_0282","ppa01232","Nucleotide metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0717",NA,NA
+"ppa:PAS_chr4_0790","ppa00511","Other glycan degradation - Komagataella phaffii"
+"ppa:PAS_chr4_0228","ppa00290","Valine, leucine and isoleucine biosynthesis - Komagataella phaffii"
+"ppa:PAS_chr4_0228","ppa00650","Butanoate metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0228","ppa00660","C5-Branched dibasic acid metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0228","ppa00770","Pantothenate and CoA biosynthesis - Komagataella phaffii"
+"ppa:PAS_chr4_0228","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0228","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr4_0228","ppa01210","2-Oxocarboxylic acid metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0228","ppa01230","Biosynthesis of amino acids - Komagataella phaffii"
+"ppa:PAS_chr2-2_0394",NA,NA
+"ppa:PAS_chr1-4_0098",NA,NA
+"ppa:PAS_chr1-4_0209",NA,NA
+"ppa:PAS_chr4_0643",NA,NA
+"ppa:PAS_chr2-2_0193","ppa00600","Sphingolipid metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-2_0193","ppa01100","Metabolic pathways - Komagataella phaffii"
+"F2QVC7",NA,NA
+"ppa:PAS_chr4_0131","ppa03010","Ribosome - Komagataella phaffii"
+"ppa:PAS_chr1-4_0158",NA,NA
+"ppa:PAS_chr4_0741",NA,NA
+"ppa:PAS_chr4_0819","ppa00900","Terpenoid backbone biosynthesis - Komagataella phaffii"
+"ppa:PAS_chr4_0819","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr4_0906","ppa03020","RNA polymerase - Komagataella phaffii"
+"ppa:PAS_chr4_0906","ppa03420","Nucleotide excision repair - Komagataella phaffii"
+"ppa:PAS_chr2-1_0107","ppa00250","Alanine, aspartate and glutamate metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0107","ppa00280","Valine, leucine and isoleucine degradation - Komagataella phaffii"
+"ppa:PAS_chr2-1_0107","ppa00410","beta-Alanine metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0107","ppa00640","Propanoate metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0107","ppa00650","Butanoate metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0107","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_0579","ppa00564","Glycerophospholipid metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0579","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr4_0840",NA,NA
+"ppa:PAS_chr3_1100",NA,NA
+"ppa:PAS_chr4_0723",NA,NA
+"ppa:PAS_chr3_0904","ppa03440","Homologous recombination - Komagataella phaffii"
+"ppa:PAS_chr3_0904","ppa03460","Fanconi anemia pathway - Komagataella phaffii"
+"ppa:PAS_chr3_0356",NA,NA
+"ppa:PAS_chr1-1_0411","ppa00100","Steroid biosynthesis - Komagataella phaffii"
+"ppa:PAS_chr1-1_0411","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr1-1_0411","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr1-1_0320",NA,NA
+"ppa:PAS_chr4_0101","ppa00970","Aminoacyl-tRNA biosynthesis - Komagataella phaffii"
+"ppa:PAS_chr1-1_0366","ppa03030","DNA replication - Komagataella phaffii"
+"ppa:PAS_chr1-4_0302",NA,NA
+"ppa:PAS_chr4_0853",NA,NA
+"ppa:PAS_chr3_0213",NA,NA
+"ppa:PAS_chr1-4_0140",NA,NA
+"ppa:PAS_chr1-4_0421","ppa00300","Lysine biosynthesis - Komagataella phaffii"
+"ppa:PAS_chr1-4_0421","ppa00620","Pyruvate metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-4_0421","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr1-4_0421","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr1-4_0421","ppa01210","2-Oxocarboxylic acid metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-4_0421","ppa01230","Biosynthesis of amino acids - Komagataella phaffii"
+"ppa:PAS_chr3_0124","ppa00100","Steroid biosynthesis - Komagataella phaffii"
+"ppa:PAS_chr3_0124","ppa00909","Sesquiterpenoid and triterpenoid biosynthesis - Komagataella phaffii"
+"ppa:PAS_chr3_0124","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_0124","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr4_0583",NA,NA
+"ppa:PAS_chr1-1_0238",NA,NA
+"ppa:PAS_chr2-1_0272",NA,NA
+"ppa:PAS_chr3_1027",NA,NA
+"ppa:PAS_chr2-1_0424","ppa00562","Inositol phosphate metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0424","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr2-1_0424","ppa04070","Phosphatidylinositol signaling system - Komagataella phaffii"
+"ppa:PAS_chr3_0518",NA,NA
+"F2QRT5",NA,NA
+"ppa:PAS_chr2-2_0115",NA,NA
+"ppa:PAS_chr2-1_0490","ppa00480","Glutathione metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0490","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0667","ppa03008","Ribosome biogenesis in eukaryotes - Komagataella phaffii"
+"ppa:PAS_chr3_1045","ppa04146","Peroxisome - Komagataella phaffii"
+"A0A1G4KPB3",NA,NA
+"F2QLR2",NA,NA
+"ppa:PAS_chr1-3_0110",NA,NA
+"ppa:PAS_chr1-3_0191","ppa00230","Purine metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-3_0191","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr1-3_0191","ppa01232","Nucleotide metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-1_0267",NA,NA
+"ppa:PAS_chr3_0371","ppa00100","Steroid biosynthesis - Komagataella phaffii"
+"ppa:PAS_chr3_0371","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_0371","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr2-2_0192",NA,NA
+"ppa:PAS_chr3_1176",NA,NA
+"ppa:PAS_chr3_1061","ppa04111","Cell cycle - yeast - Komagataella phaffii"
+"ppa:PAS_chr3_1061","ppa04113","Meiosis - yeast - Komagataella phaffii"
+"ppa:PAS_chr2-1_0657","ppa00260","Glycine, serine and threonine metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0657","ppa00270","Cysteine and methionine metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0657","ppa00680","Methane metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0657","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr2-1_0657","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr2-1_0657","ppa01200","Carbon metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0657","ppa01230","Biosynthesis of amino acids - Komagataella phaffii"
+"ppa:PAS_chr3_1024",NA,NA
+"ppa:PAS_chr1-3_0160",NA,NA
+"ppa:PAS_chr4_0105","ppa03008","Ribosome biogenesis in eukaryotes - Komagataella phaffii"
+"ppa:PAS_chr1-4_0311",NA,NA
+"ppa:PAS_chr2-1_0027",NA,NA
+"ppa:PAS_chr1-4_0080",NA,NA
+"ppa:PAS_chr1-4_0357","ppa04081","Hormone signaling - Komagataella phaffii"
+"ppa:PAS_chr1-4_0357","ppa04113","Meiosis - yeast - Komagataella phaffii"
+"ppa:PAS_chr1-4_0357","ppa04138","Autophagy - yeast - Komagataella phaffii"
+"ppa:PAS_chr2-1_0293",NA,NA
+"ppa:PAS_chr3_0410","ppa00330","Arginine and proline metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0410","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_0410","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr1-1_0404",NA,NA
+"ppa:PAS_chr3_0181","ppa00620","Pyruvate metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0181","ppa01200","Carbon metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0336",NA,NA
+"ppa:PAS_chr3_0661",NA,NA
+"ppa:PAS_chr3_0868","ppa00010","Glycolysis / Gluconeogenesis - Komagataella phaffii"
+"ppa:PAS_chr3_0868","ppa00030","Pentose phosphate pathway - Komagataella phaffii"
+"ppa:PAS_chr3_0868","ppa00051","Fructose and mannose metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0868","ppa00680","Methane metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0868","ppa00710","Carbon fixation by Calvin cycle - Komagataella phaffii"
+"ppa:PAS_chr3_0868","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_0868","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr3_0868","ppa01200","Carbon metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-1_0160","ppa04141","Protein processing in endoplasmic reticulum - Komagataella phaffii"
+"F2QX88",NA,NA
+"ppa:PAS_chr4_0416","ppa00250","Alanine, aspartate and glutamate metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0416","ppa00260","Glycine, serine and threonine metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0416","ppa00630","Glyoxylate and dicarboxylate metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0416","ppa00680","Methane metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0416","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0416","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr4_0416","ppa01200","Carbon metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0416","ppa01210","2-Oxocarboxylic acid metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0416","ppa04146","Peroxisome - Komagataella phaffii"
+"ppa:PAS_chr3_0408",NA,NA
+"ppa:PAS_chr3_1117","ppa03010","Ribosome - Komagataella phaffii"
+"ppa:PAS_chr1-1_0442","ppa03082","ATP-dependent chromatin remodeling - Komagataella phaffii"
+"ppa:PAS_chr2-1_0535",NA,NA
+"ppa:PAS_chr3_0633",NA,NA
+"ppa:PAS_chr4_0830","ppa00380","Tryptophan metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0830","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0830","ppa01240","Biosynthesis of cofactors - Komagataella phaffii"
+"ppa:PAS_chr1-1_0489",NA,NA
+"ppa:PAS_chr2-1_0265",NA,NA
+"ppa:PAS_chr3_0937","ppa00280","Valine, leucine and isoleucine degradation - Komagataella phaffii"
+"ppa:PAS_chr3_0937","ppa00410","beta-Alanine metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0937","ppa00640","Propanoate metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0937","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_0937","ppa01200","Carbon metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0480","ppa04141","Protein processing in endoplasmic reticulum - Komagataella phaffii"
+"ppa:PAS_chr1-4_0569",NA,NA
+"ppa:PAS_chr2-1_0161","ppa04130","SNARE interactions in vesicular transport - Komagataella phaffii"
+"ppa:PAS_chr3_0189",NA,NA
+"ppa:PAS_chr1-4_0319",NA,NA
+"ppa:PAS_chr1-1_0430","ppa00230","Purine metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-1_0430","ppa00250","Alanine, aspartate and glutamate metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-1_0430","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr1-1_0430","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"F2QXU3",NA,NA
+"ppa:PAS_chr2-1_0448",NA,NA
+"ppa:PAS_chr4_0233","ppa00760","Nicotinate and nicotinamide metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0233","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0233","ppa01240","Biosynthesis of cofactors - Komagataella phaffii"
+"ppa:PAS_chr3_0857",NA,NA
+"ppa:PAS_chr3_0332",NA,NA
+"ppa:PAS_chr4_0361",NA,NA
+"ppa:PAS_chr1-4_0276",NA,NA
+"ppa:PAS_chr4_0996","ppa00740","Riboflavin metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0996","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0996","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr4_0996","ppa01240","Biosynthesis of cofactors - Komagataella phaffii"
+"ppa:PAS_chr2-2_0293","ppa00860","Porphyrin metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-2_0293","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0627",NA,NA
+"ppa:PAS_chr1-1_0145",NA,NA
+"ppa:PAS_chr1-4_0315","ppa00760","Nicotinate and nicotinamide metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-4_0315","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr2-1_0681",NA,NA
+"ppa:PAS_chr1-4_0684",NA,NA
+"ppa:PAS_chr3_1247",NA,NA
+"ppa:PAS_chr2-2_0221",NA,NA
+"ppa:PAS_chr1-1_0327",NA,NA
+"ppa:PAS_chr3_0406","ppa00250","Alanine, aspartate and glutamate metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0406","ppa00470","D-Amino acid metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0406","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_0406","ppa04146","Peroxisome - Komagataella phaffii"
+"ppa:PAS_chr2-1_0486","ppa03010","Ribosome - Komagataella phaffii"
+"ppa:PAS_chr2-1_0486","ppa04120","Ubiquitin mediated proteolysis - Komagataella phaffii"
+"ppa:PAS_chr1-4_0045",NA,NA
+"ppa:PAS_chr3_0586",NA,NA
+"ppa:PAS_chr3_0303",NA,NA
+"ppa:PAS_chr2-1_0640",NA,NA
+"ppa:PAS_chr2-1_0395","ppa03030","DNA replication - Komagataella phaffii"
+"ppa:PAS_chr2-1_0395","ppa03410","Base excision repair - Komagataella phaffii"
+"ppa:PAS_chr2-1_0395","ppa03420","Nucleotide excision repair - Komagataella phaffii"
+"ppa:PAS_chr2-1_0395","ppa03430","Mismatch repair - Komagataella phaffii"
+"ppa:PAS_chr2-1_0395","ppa03440","Homologous recombination - Komagataella phaffii"
+"ppa:PAS_chr2-2_0211",NA,NA
+"ppa:PAS_chr1-1_0129","ppa00310","Lysine degradation - Komagataella phaffii"
+"ppa:PAS_chr1-1_0129","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_1084","ppa00920","Sulfur metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_1084","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_1084","ppa01320","Sulfur cycle - Komagataella phaffii"
+"ppa:PAS_chr3_0281",NA,NA
+"ppa:PAS_chr4_0415","ppa00260","Glycine, serine and threonine metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0415","ppa00460","Cyanoamino acid metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0415","ppa00630","Glyoxylate and dicarboxylate metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0415","ppa00670","One carbon pool by folate - Komagataella phaffii"
+"ppa:PAS_chr4_0415","ppa00680","Methane metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0415","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0415","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr4_0415","ppa01200","Carbon metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0415","ppa01230","Biosynthesis of amino acids - Komagataella phaffii"
+"ppa:PAS_chr4_0415","ppa01240","Biosynthesis of cofactors - Komagataella phaffii"
+"ppa:PAS_chr4_0415","ppa04981","Folate transport and metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0507",NA,NA
+"ppa:PAS_chr4_0803",NA,NA
+"ppa:PAS_chr3_0040",NA,NA
+"ppa:PAS_chr2-2_0372",NA,NA
+"ppa:PAS_chr3_0639","ppa04144","Endocytosis - Komagataella phaffii"
+"ppa:PAS_chr4_0243",NA,NA
+"ppa:PAS_chr4_0582",NA,NA
+"ppa:PAS_chr4_0743","ppa01040","Biosynthesis of unsaturated fatty acids - Komagataella phaffii"
+"ppa:PAS_chr4_0743","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0743","ppa01212","Fatty acid metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0050","ppa02010","ABC transporters - Komagataella phaffii"
+"ppa:PAS_chr1-4_0061",NA,NA
+"ppa:PAS_chr4_0661",NA,NA
+"ppa:PAS_chr1-1_0266",NA,NA
+"ppa:PAS_chr2-2_0229","ppa03010","Ribosome - Komagataella phaffii"
+"ppa:PAS_chr2-2_0395",NA,NA
+"ppa:PAS_chr1-3_0178",NA,NA
+"ppa:PAS_chr2-2_0377","ppa03010","Ribosome - Komagataella phaffii"
+"ppa:PAS_chr2-2_0223",NA,NA
+"ppa:PAS_chr1-4_0616","ppa03013","Nucleocytoplasmic transport - Komagataella phaffii"
+"ppa:PAS_chr1-4_0616","ppa03015","mRNA surveillance pathway - Komagataella phaffii"
+"ppa:PAS_chr1-4_0616","ppa03040","Spliceosome - Komagataella phaffii"
+"F2QXT2",NA,NA
+"ppa:PAS_chr3_0761","ppa04146","Peroxisome - Komagataella phaffii"
+"ppa:PAS_chr3_0227",NA,NA
+"ppa:PAS_chr2-2_0470",NA,NA
+"ppa:PAS_chr2-1_0598",NA,NA
+"ppa:PAS_chr3_1172",NA,NA
+"ppa:PAS_chr4_0918",NA,NA
+"ppa:PAS_chr4_0585","ppa04111","Cell cycle - yeast - Komagataella phaffii"
+"ppa:PAS_chr4_0585","ppa04113","Meiosis - yeast - Komagataella phaffii"
+"ppa:PAS_chr3_0507","ppa00100","Steroid biosynthesis - Komagataella phaffii"
+"ppa:PAS_chr3_0507","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_0507","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr1-4_0082",NA,NA
+"ppa:PAS_chr2-2_0133","ppa03015","mRNA surveillance pathway - Komagataella phaffii"
+"ppa:PAS_chr4_0799","ppa03010","Ribosome - Komagataella phaffii"
+"ppa:PAS_chr4_0133",NA,NA
+"ppa:PAS_chr1-4_0466",NA,NA
+"ppa:PAS_chr2-2_0262",NA,NA
+"ppa:PAS_chr1-1_0172","ppa00190","Oxidative phosphorylation - Komagataella phaffii"
+"ppa:PAS_chr1-1_0172","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr1-4_0390","ppa00564","Glycerophospholipid metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-4_0390","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr2-2_0145","ppa00670","One carbon pool by folate - Komagataella phaffii"
+"ppa:PAS_chr2-2_0145","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr2-2_0145","ppa04981","Folate transport and metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_1208",NA,NA
+"F2QX96",NA,NA
+"ppa:PAS_chr4_0746",NA,NA
+"F2QXT7",NA,NA
+"ppa:PAS_chr2-2_0057","ppa04141","Protein processing in endoplasmic reticulum - Komagataella phaffii"
+"ppa:PAS_chr1-4_0658",NA,NA
+"ppa:PAS_chr2-2_0045","ppa03008","Ribosome biogenesis in eukaryotes - Komagataella phaffii"
+"ppa:PAS_chr3_0976",NA,NA
+"ppa:PAS_chr4_0369","ppa00920","Sulfur metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0369","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0369","ppa01320","Sulfur cycle - Komagataella phaffii"
+"ppa:PAS_chr4_0701",NA,NA
+"ppa:PAS_FragD_0024",NA,NA
+"ppa:PAS_chr3_1228",NA,NA
+"ppa:PAS_chr1-1_0425",NA,NA
+"ppa:PAS_chr3_0228",NA,NA
+"ppa:PAS_chr3_0086",NA,NA
+"ppa:PAS_chr3_0783","ppa00620","Pyruvate metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0783","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0080",NA,NA
+"ppa:PAS_chr4_0933",NA,NA
+"ppa:PAS_chr2-1_0049",NA,NA
+"ppa:PAS_chr4_0786","ppa04146","Peroxisome - Komagataella phaffii"
+"ppa:PAS_chr4_0795","ppa00300","Lysine biosynthesis - Komagataella phaffii"
+"ppa:PAS_chr4_0795","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0795","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr4_0795","ppa01210","2-Oxocarboxylic acid metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0795","ppa01230","Biosynthesis of amino acids - Komagataella phaffii"
+"ppa:PAS_chr1-4_0138",NA,NA
+"ppa:PAS_chr4_0744",NA,NA
+"ppa:PAS_chr2-1_0245",NA,NA
+"ppa:PAS_chr2-2_0483",NA,NA
+"ppa:PAS_chr3_0743","ppa00250","Alanine, aspartate and glutamate metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0743","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr2-1_0384","ppa03010","Ribosome - Komagataella phaffii"
+"ppa:PAS_chr2-1_0333",NA,NA
+"ppa:PAS_chr1-3_0121",NA,NA
+"ppa:PAS_chr4_0038",NA,NA
+"ppa:PAS_chr2-1_0580","ppa00020","Citrate cycle (TCA cycle) - Komagataella phaffii"
+"ppa:PAS_chr2-1_0580","ppa00480","Glutathione metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0580","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr2-1_0580","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr2-1_0580","ppa01200","Carbon metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0580","ppa01210","2-Oxocarboxylic acid metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0580","ppa01230","Biosynthesis of amino acids - Komagataella phaffii"
+"ppa:PAS_chr2-1_0580","ppa04146","Peroxisome - Komagataella phaffii"
+"ppa:PAS_chr2-1_0489",NA,NA
+"ppa:PAS_chr3_0869",NA,NA
+"ppa:PAS_chr2-2_0071",NA,NA
+"ppa:PAS_chr1-1_0085",NA,NA
+"F2QTS8",NA,NA
+"ppa:PAS_chr3_0358",NA,NA
+"ppa:PAS_chr4_0754","ppa00051","Fructose and mannose metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0754","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr2-1_0163","ppa03030","DNA replication - Komagataella phaffii"
+"ppa:PAS_chr2-1_0163","ppa03410","Base excision repair - Komagataella phaffii"
+"ppa:PAS_chr2-1_0163","ppa03420","Nucleotide excision repair - Komagataella phaffii"
+"ppa:PAS_chr2-1_0163","ppa03430","Mismatch repair - Komagataella phaffii"
+"ppa:PAS_chr2-1_0163","ppa03440","Homologous recombination - Komagataella phaffii"
+"ppa:PAS_chr1-4_0308",NA,NA
+"ppa:PAS_chr1-3_0081","ppa00561","Glycerolipid metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-3_0081","ppa00564","Glycerophospholipid metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-3_0081","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr1-3_0081","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr4_0067",NA,NA
+"ppa:PAS_chr1-4_0133","ppa04146","Peroxisome - Komagataella phaffii"
+"ppa:PAS_chr4_0058",NA,NA
+"ppa:PAS_chr3_0472",NA,NA
+"ppa:PAS_chr4_0800","ppa03013","Nucleocytoplasmic transport - Komagataella phaffii"
+"ppa:PAS_chr4_0800","ppa03015","mRNA surveillance pathway - Komagataella phaffii"
+"ppa:PAS_chr2-1_0531",NA,NA
+"ppa:PAS_chr1-4_0219",NA,NA
+"ppa:PAS_chr2-2_0125","ppa00513","Various types of N-glycan biosynthesis - Komagataella phaffii"
+"ppa:PAS_chr2-2_0125","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr2-2_0339","ppa03030","DNA replication - Komagataella phaffii"
+"ppa:PAS_chr2-2_0339","ppa04111","Cell cycle - yeast - Komagataella phaffii"
+"ppa:PAS_chr2-2_0339","ppa04113","Meiosis - yeast - Komagataella phaffii"
+"F2QWE6",NA,NA
+"ppa:PAS_chr1-1_0399",NA,NA
+"ppa:PAS_chr3_1088",NA,NA
+"ppa:PAS_chr3_1015",NA,NA
+"ppa:PAS_chr1-4_0242",NA,NA
+"ppa:PAS_chr1-3_0128","ppa00480","Glutathione metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-3_0128","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_0456","ppa00010","Glycolysis / Gluconeogenesis - Komagataella phaffii"
+"ppa:PAS_chr3_0456","ppa00030","Pentose phosphate pathway - Komagataella phaffii"
+"ppa:PAS_chr3_0456","ppa00500","Starch and sucrose metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0456","ppa00520","Amino sugar and nucleotide sugar metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0456","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_0456","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr3_0456","ppa01200","Carbon metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0456","ppa01250","Biosynthesis of nucleotide sugars - Komagataella phaffii"
+"ppa:PAS_chr1-1_0061",NA,NA
+"ppa:PAS_chr1-3_0038",NA,NA
+"ppa:PAS_chr2-2_0296",NA,NA
+"ppa:PAS_chr4_0433",NA,NA
+"ppa:PAS_chr2-1_0103","ppa00730","Thiamine metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0103","ppa00740","Riboflavin metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0103","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr1-3_0228",NA,NA
+"ppa:PAS_chr3_0053","ppa00100","Steroid biosynthesis - Komagataella phaffii"
+"ppa:PAS_chr3_0053","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_0053","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr2-1_0432",NA,NA
+"ppa:PAS_chr1-4_0442",NA,NA
+"F2QW02",NA,NA
+"ppa:PAS_FragB_0048",NA,NA
+"ppa:PAS_chr1-1_0046","ppa03008","Ribosome biogenesis in eukaryotes - Komagataella phaffii"
+"ppa:PAS_chr3_0747",NA,NA
+"ppa:PAS_chr4_0784",NA,NA
+"ppa:PAS_chr2-1_0201",NA,NA
+"ppa:PAS_chr2-1_0694",NA,NA
+"ppa:PAS_chr4_0969",NA,NA
+"ppa:PAS_chr3_0738",NA,NA
+"ppa:PAS_chr4_0553",NA,NA
+"ppa:PAS_chr4_0947",NA,NA
+"ppa:PAS_chr3_0268","ppa03008","Ribosome biogenesis in eukaryotes - Komagataella phaffii"
+"ppa:PAS_chr2-1_0436",NA,NA
+"ppa:PAS_chr2-2_0369",NA,NA
+"ppa:PAS_chr1-3_0234",NA,NA
+"ppa:PAS_chr3_0831","ppa00020","Citrate cycle (TCA cycle) - Komagataella phaffii"
+"ppa:PAS_chr3_0831","ppa00640","Propanoate metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0831","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_0831","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr3_0831","ppa01200","Carbon metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0474","ppa03010","Ribosome - Komagataella phaffii"
+"ppa:PAS_chr3_0996","ppa00240","Pyrimidine metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0996","ppa00670","One carbon pool by folate - Komagataella phaffii"
+"ppa:PAS_chr3_0996","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_0996","ppa01232","Nucleotide metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0996","ppa04981","Folate transport and metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0848",NA,NA
+"ppa:PAS_chr1-4_0356",NA,NA
+"ppa:PAS_chr1-3_0207",NA,NA
+"ppa:PAS_chr2-1_0325",NA,NA
+"ppa:PAS_chr2-1_0850","ppa00190","Oxidative phosphorylation - Komagataella phaffii"
+"ppa:PAS_chr2-1_0850","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr2-1_0850","ppa04148","Efferocytosis - Komagataella phaffii"
+"ppa:PAS_chr2-1_0655",NA,NA
+"ppa:PAS_chr2-1_0782",NA,NA
+"ppa:PAS_chr1-3_0091",NA,NA
+"ppa:PAS_chr2-1_0139",NA,NA
+"ppa:PAS_chr1-1_0253",NA,NA
+"ppa:PAS_chr4_0865","ppa00270","Cysteine and methionine metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0865","ppa00920","Sulfur metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0865","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0865","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr4_0865","ppa01230","Biosynthesis of amino acids - Komagataella phaffii"
+"ppa:PAS_chr2-2_0086","ppa03010","Ribosome - Komagataella phaffii"
+"ppa:PAS_chr4_0423","ppa03008","Ribosome biogenesis in eukaryotes - Komagataella phaffii"
+"ppa:PAS_chr3_0255",NA,NA
+"ppa:PAS_chr3_1240","ppa03040","Spliceosome - Komagataella phaffii"
+"ppa:PAS_chr1-4_0612",NA,NA
+"ppa:PAS_chr4_0346",NA,NA
+"ppa:PAS_chr3_0664",NA,NA
+"ppa:PAS_FragB_0077",NA,NA
+"ppa:PAS_chr2-1_0072","ppa01040","Biosynthesis of unsaturated fatty acids - Komagataella phaffii"
+"ppa:PAS_chr2-1_0072","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr2-1_0072","ppa01212","Fatty acid metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0899","ppa00260","Glycine, serine and threonine metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0899","ppa00270","Cysteine and methionine metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0899","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_0899","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr3_0899","ppa01230","Biosynthesis of amino acids - Komagataella phaffii"
+"ppa:PAS_chr2-1_0512","ppa03030","DNA replication - Komagataella phaffii"
+"ppa:PAS_chr1-1_0428",NA,NA
+"ppa:PAS_chr2-1_0702","ppa03420","Nucleotide excision repair - Komagataella phaffii"
+"ppa:PAS_chr3_1141",NA,NA
+"ppa:PAS_chr4_0253",NA,NA
+"ppa:PAS_chr4_0272","ppa00620","Pyruvate metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0272","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_0335","ppa03010","Ribosome - Komagataella phaffii"
+"ppa:PAS_chr1-1_0091",NA,NA
+"ppa:PAS_chr1-1_0443",NA,NA
+"ppa:PAS_chr1-4_0205",NA,NA
+"ppa:PAS_chr1-4_0577","ppa03060","Protein export - Komagataella phaffii"
+"ppa:PAS_chr1-1_0474",NA,NA
+"ppa:PAS_chr2-1_0501",NA,NA
+"ppa:PAS_chr1-4_0619","ppa02010","ABC transporters - Komagataella phaffii"
+"ppa:PAS_chr1-4_0619","ppa04981","Folate transport and metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0065",NA,NA
+"ppa:PAS_chr2-1_0288",NA,NA
+"ppa:PAS_chr3_0797","ppa03450","Non-homologous end-joining - Komagataella phaffii"
+"ppa:PAS_chr4_0666",NA,NA
+"ppa:PAS_chr2-2_0242","ppa03008","Ribosome biogenesis in eukaryotes - Komagataella phaffii"
+"ppa:PAS_chr4_0992",NA,NA
+"ppa:PAS_chr2-1_0234",NA,NA
+"ppa:PAS_chr4_0408","ppa00440","Phosphonate and phosphinate metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0408","ppa00564","Glycerophospholipid metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0408","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr1-4_0198","ppa00410","beta-Alanine metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-4_0198","ppa00770","Pantothenate and CoA biosynthesis - Komagataella phaffii"
+"ppa:PAS_chr1-4_0198","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr1-4_0198","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr1-4_0198","ppa01240","Biosynthesis of cofactors - Komagataella phaffii"
+"ppa:PAS_chr2-1_0217",NA,NA
+"ppa:PAS_chr3_0132",NA,NA
+"ppa:PAS_chr2-2_0473",NA,NA
+"ppa:PAS_chr1-4_0005",NA,NA
+"ppa:PAS_chr3_0837",NA,NA
+"ppa:PAS_chr3_0623","ppa00220","Arginine biosynthesis - Komagataella phaffii"
+"ppa:PAS_chr3_0623","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_0623","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr3_0623","ppa01230","Biosynthesis of amino acids - Komagataella phaffii"
+"ppa:PAS_chr3_0896",NA,NA
+"ppa:PAS_chr3_0890","ppa00270","Cysteine and methionine metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0890","ppa00670","One carbon pool by folate - Komagataella phaffii"
+"ppa:PAS_chr3_0890","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_0099","ppa04146","Peroxisome - Komagataella phaffii"
+"ppa:PAS_chr4_0429","ppa04120","Ubiquitin mediated proteolysis - Komagataella phaffii"
+"ppa:PAS_chr2-1_0629","ppa03420","Nucleotide excision repair - Komagataella phaffii"
+"ppa:PAS_chr2-1_0488",NA,NA
+"ppa:PAS_chr3_0817",NA,NA
+"ppa:PAS_chr1-4_0071","ppa04146","Peroxisome - Komagataella phaffii"
+"ppa:PAS_chr1-1_0089",NA,NA
+"ppa:PAS_chr2-1_0221","ppa00760","Nicotinate and nicotinamide metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0221","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr2-1_0221","ppa01240","Biosynthesis of cofactors - Komagataella phaffii"
+"ppa:PAS_chr3_0521",NA,NA
+"ppa:PAS_chr3_0862",NA,NA
+"ppa:PAS_chr1-4_0527",NA,NA
+"ppa:PAS_chr1-4_0093","ppa00564","Glycerophospholipid metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-4_0093","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr1-4_0093","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr4_0238","ppa03022","Basal transcription factors - Komagataella phaffii"
+"ppa:PAS_chr4_0238","ppa03420","Nucleotide excision repair - Komagataella phaffii"
+"ppa:PAS_chr3_0295","ppa04138","Autophagy - yeast - Komagataella phaffii"
+"ppa:PAS_chr2-2_0067",NA,NA
+"ppa:PAS_chr2-1_0785","ppa00061","Fatty acid biosynthesis - Komagataella phaffii"
+"ppa:PAS_chr2-1_0785","ppa00071","Fatty acid degradation - Komagataella phaffii"
+"ppa:PAS_chr2-1_0785","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr2-1_0785","ppa01212","Fatty acid metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0785","ppa04146","Peroxisome - Komagataella phaffii"
+"ppa:PAS_chr3_1105","ppa03410","Base excision repair - Komagataella phaffii"
+"ppa:PAS_chr2-1_0887",NA,NA
+"F2QV71",NA,NA
+"ppa:PAS_chr1-3_0220","ppa00670","One carbon pool by folate - Komagataella phaffii"
+"ppa:PAS_chr1-3_0220","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0213","ppa00030","Pentose phosphate pathway - Komagataella phaffii"
+"ppa:PAS_chr4_0213","ppa00710","Carbon fixation by Calvin cycle - Komagataella phaffii"
+"ppa:PAS_chr4_0213","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0213","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr4_0213","ppa01200","Carbon metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0213","ppa01230","Biosynthesis of amino acids - Komagataella phaffii"
+"ppa:PAS_chr2-2_0379",NA,NA
+"ppa:PAS_chr4_0217",NA,NA
+"ppa:PAS_chr2-1_0030",NA,NA
+"ppa:PAS_chr2-1_0539",NA,NA
+"ppa:PAS_chr1-4_0548","ppa04138","Autophagy - yeast - Komagataella phaffii"
+"ppa:PAS_chr1-4_0631",NA,NA
+"ppa:PAS_chr2-1_0459","ppa04136","Autophagy - other - Komagataella phaffii"
+"ppa:PAS_chr2-1_0459","ppa04138","Autophagy - yeast - Komagataella phaffii"
+"ppa:PAS_chr3_0494",NA,NA
+"ppa:PAS_chr2-2_0456",NA,NA
+"ppa:PAS_chr2-1_0068",NA,NA
+"F2QVL1",NA,NA
+"ppa:PAS_chr2-1_0169","ppa04139","Mitophagy - yeast - Komagataella phaffii"
+"ppa:PAS_chr3_0649",NA,NA
+"ppa:PAS_chr3_0659","ppa00300","Lysine biosynthesis - Komagataella phaffii"
+"ppa:PAS_chr3_0659","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_0659","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr3_0659","ppa01210","2-Oxocarboxylic acid metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0659","ppa01230","Biosynthesis of amino acids - Komagataella phaffii"
+"ppa:PAS_chr1-3_0149","ppa04011","MAPK signaling pathway - yeast - Komagataella phaffii"
+"ppa:PAS_chr1-1_0296","ppa03010","Ribosome - Komagataella phaffii"
+"ppa:PAS_chr1-4_0333","ppa00563","Glycosylphosphatidylinositol (GPI)-anchor biosynthesis - Komagataella phaffii"
+"ppa:PAS_chr1-4_0333","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0788","ppa04146","Peroxisome - Komagataella phaffii"
+"ppa:PAS_chr3_1238","ppa04130","SNARE interactions in vesicular transport - Komagataella phaffii"
+"ppa:PAS_chr1-4_0657","ppa03272","Virion - Hepatitis viruses - Komagataella phaffii"
+"ppa:PAS_chr1-4_0657","ppa04144","Endocytosis - Komagataella phaffii"
+"ppa:PAS_chr3_0986","ppa00561","Glycerolipid metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0986","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0179",NA,NA
+"ppa:PAS_chr3_0063",NA,NA
+"ppa:PAS_chr2-1_0132",NA,NA
+"ppa:PAS_chr2-2_0277",NA,NA
+"ppa:PAS_chr4_0472",NA,NA
+"ppa:PAS_chr1-4_0354",NA,NA
+"ppa:PAS_chr3_0625",NA,NA
+"ppa:PAS_chr3_0903",NA,NA
+"ppa:PAS_chr1-1_0369","ppa03272","Virion - Hepatitis viruses - Komagataella phaffii"
+"ppa:PAS_chr1-1_0369","ppa04144","Endocytosis - Komagataella phaffii"
+"ppa:PAS_chr4_0691","ppa00785","Lipoic acid metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0691","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0691","ppa01240","Biosynthesis of cofactors - Komagataella phaffii"
+"ppa:PAS_chr2-1_0282",NA,NA
+"ppa:PAS_chr1-3_0217",NA,NA
+"ppa:PAS_chr2-1_0351",NA,NA
+"ppa:PAS_chr1-4_0246",NA,NA
+"ppa:PAS_chr1-4_0654",NA,NA
+"ppa:PAS_chr2-1_0637","ppa00400","Phenylalanine, tyrosine and tryptophan biosynthesis - Komagataella phaffii"
+"ppa:PAS_chr2-1_0637","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr2-1_0637","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr2-1_0637","ppa01230","Biosynthesis of amino acids - Komagataella phaffii"
+"ppa:PAS_chr2-1_0743",NA,NA
+"ppa:PAS_chr4_0336","ppa00620","Pyruvate metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0336","ppa00640","Propanoate metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0336","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0336","ppa04011","MAPK signaling pathway - yeast - Komagataella phaffii"
+"ppa:PAS_chr1-3_0118",NA,NA
+"ppa:PAS_chr3_1011","ppa00480","Glutathione metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_1011","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0289",NA,NA
+"ppa:PAS_chr2-1_0100","ppa03030","DNA replication - Komagataella phaffii"
+"ppa:PAS_chr2-1_0100","ppa03082","ATP-dependent chromatin remodeling - Komagataella phaffii"
+"ppa:PAS_chr2-1_0100","ppa03410","Base excision repair - Komagataella phaffii"
+"ppa:PAS_chr2-1_0100","ppa03420","Nucleotide excision repair - Komagataella phaffii"
+"ppa:PAS_chr4_0368","ppa00062","Fatty acid elongation - Komagataella phaffii"
+"ppa:PAS_chr4_0368","ppa01040","Biosynthesis of unsaturated fatty acids - Komagataella phaffii"
+"ppa:PAS_chr4_0368","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0368","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr4_0368","ppa01212","Fatty acid metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0362",NA,NA
+"ppa:PAS_chr4_0195","ppa03008","Ribosome biogenesis in eukaryotes - Komagataella phaffii"
+"ppa:PAS_chr2-1_0363","ppa00190","Oxidative phosphorylation - Komagataella phaffii"
+"ppa:PAS_chr2-1_0363","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr1-4_0022",NA,NA
+"ppa:PAS_chr1-4_0019","ppa00564","Glycerophospholipid metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-4_0019","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr1-4_0019","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr3_0094",NA,NA
+"ppa:PAS_chr2-1_0149","ppa03030","DNA replication - Komagataella phaffii"
+"ppa:PAS_chr2-1_0149","ppa04111","Cell cycle - yeast - Komagataella phaffii"
+"ppa:PAS_chr2-1_0149","ppa04113","Meiosis - yeast - Komagataella phaffii"
+"ppa:PAS_chr1-4_0218","ppa00400","Phenylalanine, tyrosine and tryptophan biosynthesis - Komagataella phaffii"
+"ppa:PAS_chr1-4_0218","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr1-4_0218","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr1-4_0218","ppa01230","Biosynthesis of amino acids - Komagataella phaffii"
+"ppa:PAS_chr2-1_0601",NA,NA
+"ppa:PAS_chr2-2_0222",NA,NA
+"ppa:PAS_chr3_0932","ppa00630","Glyoxylate and dicarboxylate metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0932","ppa00680","Methane metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0932","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_0932","ppa01200","Carbon metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_1152",NA,NA
+"ppa:PAS_chr2-2_0186","ppa04146","Peroxisome - Komagataella phaffii"
+"ppa:PAS_chr3_0816","ppa04011","MAPK signaling pathway - yeast - Komagataella phaffii"
+"ppa:PAS_chr1-3_0208",NA,NA
+"ppa:PAS_chr2-1_0666","ppa04111","Cell cycle - yeast - Komagataella phaffii"
+"ppa:PAS_chr2-1_0666","ppa04120","Ubiquitin mediated proteolysis - Komagataella phaffii"
+"ppa:PAS_chr1-1_0459","ppa00510","N-Glycan biosynthesis - Komagataella phaffii"
+"ppa:PAS_chr1-1_0459","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr1-1_0291",NA,NA
+"ppa:PAS_chr4_0356","ppa00230","Purine metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0356","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0356","ppa04113","Meiosis - yeast - Komagataella phaffii"
+"ppa:PAS_chr2-2_0319",NA,NA
+"ppa:PAS_chr2-1_0218",NA,NA
+"ppa:PAS_chr2-1_0491",NA,NA
+"ppa:PAS_chr1-4_0283","ppa03015","mRNA surveillance pathway - Komagataella phaffii"
+"ppa:PAS_chr1-4_0283","ppa03018","RNA degradation - Komagataella phaffii"
+"ppa:PAS_chr3_0712",NA,NA
+"ppa:PAS_chr4_0049",NA,NA
+"ppa:PAS_chr4_0062","ppa04138","Autophagy - yeast - Komagataella phaffii"
+"ppa:PAS_chr4_0062","ppa04148","Efferocytosis - Komagataella phaffii"
+"ppa:PAS_chr4_0450",NA,NA
+"ppa:PAS_chr3_0651","ppa03020","RNA polymerase - Komagataella phaffii"
+"ppa:PAS_chr3_0549","ppa03008","Ribosome biogenesis in eukaryotes - Komagataella phaffii"
+"ppa:PAS_chr3_0549","ppa04139","Mitophagy - yeast - Komagataella phaffii"
+"ppa:PAS_chr3_1250",NA,NA
+"ppa:PAS_chr2-1_0173","ppa00500","Starch and sucrose metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0173","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr2-1_0173","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr2-1_0634","ppa03010","Ribosome - Komagataella phaffii"
+"ppa:PAS_chr3_0141",NA,NA
+"ppa:PAS_chr4_0813","ppa03010","Ribosome - Komagataella phaffii"
+"ppa:PAS_chr1-1_0277","ppa00030","Pentose phosphate pathway - Komagataella phaffii"
+"ppa:PAS_chr1-1_0277","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr1-1_0277","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr1-1_0277","ppa01200","Carbon metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_1013",NA,NA
+"ppa:PAS_chr1-4_0542",NA,NA
+"ppa:PAS_chr3_0352",NA,NA
+"ppa:PAS_chr1-4_0488",NA,NA
+"ppa:PAS_chr1-1_0257",NA,NA
+"ppa:PAS_chr2-1_0446",NA,NA
+"ppa:PAS_chr3_0241",NA,NA
+"ppa:PAS_chr2-2_0064",NA,NA
+"ppa:PAS_chr4_0750",NA,NA
+"ppa:PAS_chr3_0752","ppa04111","Cell cycle - yeast - Komagataella phaffii"
+"ppa:PAS_chr4_0079",NA,NA
+"ppa:PAS_chr1-3_0130","ppa00760","Nicotinate and nicotinamide metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-3_0130","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr2-1_0105",NA,NA
+"ppa:PAS_chr2-2_0063","ppa00564","Glycerophospholipid metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-2_0063","ppa00565","Ether lipid metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-2_0063","ppa01100","Metabolic pathways - Komagataella phaffii"
+"A0A1G4KQW9",NA,NA
+"ppa:PAS_chr3_0946","ppa03010","Ribosome - Komagataella phaffii"
+"ppa:PAS_chr2-1_0233","ppa03015","mRNA surveillance pathway - Komagataella phaffii"
+"F2QMY9",NA,NA
+"A0A1G4KQ83",NA,NA
+"ppa:PAS_chr3_0515","ppa00513","Various types of N-glycan biosynthesis - Komagataella phaffii"
+"ppa:PAS_chr3_0515","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_0230","ppa03040","Spliceosome - Komagataella phaffii"
+"ppa:PAS_chr3_0230","ppa04141","Protein processing in endoplasmic reticulum - Komagataella phaffii"
+"ppa:PAS_chr3_0230","ppa04144","Endocytosis - Komagataella phaffii"
+"ppa:PAS_chr2-2_0496","ppa00250","Alanine, aspartate and glutamate metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-2_0496","ppa00330","Arginine and proline metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-2_0496","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr1-1_0351",NA,NA
+"ppa:PAS_chr3_0152",NA,NA
+"ppa:PAS_chr1-4_0689",NA,NA
+"ppa:PAS_chr3_0836",NA,NA
+"ppa:PAS_chr1-3_0078","ppa00860","Porphyrin metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-3_0078","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr1-3_0078","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr1-3_0078","ppa01240","Biosynthesis of cofactors - Komagataella phaffii"
+"ppa:PAS_chr1-4_0439",NA,NA
+"ppa:PAS_chr3_0789",NA,NA
+"ppa:PAS_chr1-4_0104","ppa00970","Aminoacyl-tRNA biosynthesis - Komagataella phaffii"
+"ppa:PAS_chr1-4_0194",NA,NA
+"ppa:PAS_chr3_0536",NA,NA
+"ppa:PAS_chr2-1_0251",NA,NA
+"ppa:PAS_chr3_0038","ppa03010","Ribosome - Komagataella phaffii"
+"ppa:PAS_chr4_0980",NA,NA
+"ppa:PAS_chr2-1_0617","ppa03013","Nucleocytoplasmic transport - Komagataella phaffii"
+"ppa:PAS_chr2-1_0253",NA,NA
+"ppa:PAS_chr4_0222",NA,NA
+"ppa:PAS_chr3_1138","ppa00230","Purine metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_1138","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_1138","ppa01232","Nucleotide metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-4_0454",NA,NA
+"ppa:PAS_chr4_0895",NA,NA
+"ppa:PAS_chr1-1_0228",NA,NA
+"ppa:PAS_chr3_0975","ppa04146","Peroxisome - Komagataella phaffii"
+"ppa:PAS_chr1-1_0236","ppa03010","Ribosome - Komagataella phaffii"
+"ppa:PAS_chr1-1_0024",NA,NA
+"ppa:PAS_chr1-4_0196",NA,NA
+"ppa:PAS_chr2-1_0203","ppa04011","MAPK signaling pathway - yeast - Komagataella phaffii"
+"ppa:PAS_chr4_0221",NA,NA
+"ppa:PAS_chr2-2_0479",NA,NA
+"ppa:PAS_chr3_1157",NA,NA
+"ppa:PAS_chr1-3_0265",NA,NA
+"ppa:PAS_chr4_0452",NA,NA
+"ppa:PAS_c121_0014",NA,NA
+"ppa:PAS_chr1-1_0306",NA,NA
+"ppa:PAS_chr1-1_0283","ppa03010","Ribosome - Komagataella phaffii"
+"ppa:PAS_chr2-1_0620","ppa03030","DNA replication - Komagataella phaffii"
+"ppa:PAS_chr2-1_0620","ppa03410","Base excision repair - Komagataella phaffii"
+"ppa:PAS_chr2-1_0620","ppa03420","Nucleotide excision repair - Komagataella phaffii"
+"ppa:PAS_chr4_0684","ppa00220","Arginine biosynthesis - Komagataella phaffii"
+"ppa:PAS_chr4_0684","ppa00330","Arginine and proline metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0684","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0684","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr4_0684","ppa01230","Biosynthesis of amino acids - Komagataella phaffii"
+"ppa:PAS_chr4_0684","ppa04148","Efferocytosis - Komagataella phaffii"
+"ppa:PAS_chr3_1009",NA,NA
+"ppa:PAS_chr1-1_0449","ppa00130","Ubiquinone and other terpenoid-quinone biosynthesis - Komagataella phaffii"
+"ppa:PAS_chr1-1_0449","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr1-1_0449","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr1-1_0449","ppa01240","Biosynthesis of cofactors - Komagataella phaffii"
+"ppa:PAS_chr1-4_0344",NA,NA
+"ppa:PAS_chr3_0931","ppa04136","Autophagy - other - Komagataella phaffii"
+"ppa:PAS_chr3_0931","ppa04138","Autophagy - yeast - Komagataella phaffii"
+"ppa:PAS_chr3_0951","ppa00010","Glycolysis / Gluconeogenesis - Komagataella phaffii"
+"ppa:PAS_chr3_0951","ppa00051","Fructose and mannose metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0951","ppa00562","Inositol phosphate metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0951","ppa00710","Carbon fixation by Calvin cycle - Komagataella phaffii"
+"ppa:PAS_chr3_0951","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_0951","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr3_0951","ppa01200","Carbon metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0951","ppa01230","Biosynthesis of amino acids - Komagataella phaffii"
+"ppa:PAS_chr1-4_0592","ppa03040","Spliceosome - Komagataella phaffii"
+"ppa:PAS_chr3_0313",NA,NA
+"ppa:PAS_chr1-1_0305",NA,NA
+"ppa:PAS_chr2-1_0046",NA,NA
+"ppa:PAS_chr2-1_0677","ppa03013","Nucleocytoplasmic transport - Komagataella phaffii"
+"ppa:PAS_chr1-4_0493",NA,NA
+"ppa:PAS_chr3_0674","ppa00620","Pyruvate metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0674","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr1-1_0058","ppa03008","Ribosome biogenesis in eukaryotes - Komagataella phaffii"
+"ppa:PAS_chr3_0770","ppa00230","Purine metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0770","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_0770","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"F2R0K5",NA,NA
+"ppa:PAS_chr2-2_0292",NA,NA
+"ppa:PAS_chr1-3_0127",NA,NA
+"ppa:PAS_chr4_0873",NA,NA
+"ppa:PAS_chr3_0908",NA,NA
+"ppa:PAS_chr1-1_0101",NA,NA
+"ppa:PAS_chr2-2_0206",NA,NA
+"ppa:PAS_chr4_0894","ppa03013","Nucleocytoplasmic transport - Komagataella phaffii"
+"ppa:PAS_chr4_0894","ppa03015","mRNA surveillance pathway - Komagataella phaffii"
+"ppa:PAS_chr3_0434",NA,NA
+"ppa:PAS_chr2-1_0638",NA,NA
+"ppa:PAS_chr1-3_0273","ppa00270","Cysteine and methionine metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-3_0273","ppa00920","Sulfur metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-3_0273","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr1-3_0273","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr1-3_0273","ppa01200","Carbon metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-3_0273","ppa01230","Biosynthesis of amino acids - Komagataella phaffii"
+"ppa:PAS_chr1-3_0273","ppa01320","Sulfur cycle - Komagataella phaffii"
+"ppa:PAS_chr1-4_0300",NA,NA
+"ppa:PAS_chr1-4_0601",NA,NA
+"ppa:PAS_chr4_0832","ppa02010","ABC transporters - Komagataella phaffii"
+"ppa:PAS_chr1-1_0071",NA,NA
+"ppa:PAS_chr1-1_0118",NA,NA
+"ppa:PAS_chr1-3_0067",NA,NA
+"ppa:PAS_chr3_0225",NA,NA
+"ppa:PAS_FragB_0034",NA,NA
+"ppa:PAS_chr2-1_0322","ppa04141","Protein processing in endoplasmic reticulum - Komagataella phaffii"
+"ppa:PAS_chr2-1_0322","ppa04145","Phagosome - Komagataella phaffii"
+"ppa:PAS_chr1-4_0160","ppa00340","Histidine metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-4_0160","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr1-4_0160","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr1-4_0160","ppa01230","Biosynthesis of amino acids - Komagataella phaffii"
+"ppa:PAS_chr2-1_0023",NA,NA
+"ppa:PAS_chr2-1_0610",NA,NA
+"ppa:PAS_chr3_1133","ppa00310","Lysine degradation - Komagataella phaffii"
+"ppa:PAS_chr3_1133","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0495",NA,NA
+"ppa:PAS_chr1-4_0642",NA,NA
+"ppa:PAS_chr3_0160",NA,NA
+"ppa:PAS_chr1-1_0262","ppa00240","Pyrimidine metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-1_0262","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr1-1_0262","ppa01232","Nucleotide metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-4_0203",NA,NA
+"ppa:PAS_chr4_0623","ppa04145","Phagosome - Komagataella phaffii"
+"ppa:PAS_chr4_0623","ppa04814","Motor proteins - Komagataella phaffii"
+"ppa:PAS_chr2-1_0192",NA,NA
+"ppa:PAS_chr4_0117",NA,NA
+"ppa:PAS_chr1-4_0078",NA,NA
+"ppa:PAS_chr4_0112","ppa00260","Glycine, serine and threonine metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0112","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0112","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr4_0112","ppa01230","Biosynthesis of amino acids - Komagataella phaffii"
+"ppa:PAS_chr3_0775","ppa04122","Sulfur relay system - Komagataella phaffii"
+"ppa:PAS_chr1-1_0047","ppa00970","Aminoacyl-tRNA biosynthesis - Komagataella phaffii"
+"ppa:PAS_chr2-1_0343","ppa00250","Alanine, aspartate and glutamate metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0343","ppa00410","beta-Alanine metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0343","ppa00430","Taurine and hypotaurine metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0343","ppa00650","Butanoate metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0343","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr2-1_0343","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_FragD_0015",NA,NA
+"ppa:PAS_chr4_0835",NA,NA
+"ppa:PAS_chr1-4_0374",NA,NA
+"ppa:PAS_chr4_0431","ppa03018","RNA degradation - Komagataella phaffii"
+"ppa:PAS_chr1-3_0165",NA,NA
+"ppa:PAS_chr3_0316",NA,NA
+"ppa:PAS_chr4_0737","ppa00541","Biosynthesis of various nucleotide sugars - Komagataella phaffii"
+"ppa:PAS_chr2-2_0299","ppa02010","ABC transporters - Komagataella phaffii"
+"ppa:PAS_chr3_0965","ppa00250","Alanine, aspartate and glutamate metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0965","ppa00410","beta-Alanine metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0965","ppa00430","Taurine and hypotaurine metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0965","ppa00650","Butanoate metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0965","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_0965","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr1-4_0469",NA,NA
+"ppa:PAS_chr1-4_0132",NA,NA
+"ppa:PAS_chr3_0538","ppa04141","Protein processing in endoplasmic reticulum - Komagataella phaffii"
+"ppa:PAS_chr1-1_0110",NA,NA
+"ppa:PAS_chr2-1_0118","ppa04011","MAPK signaling pathway - yeast - Komagataella phaffii"
+"ppa:PAS_chr2-1_0445",NA,NA
+"ppa:PAS_chr2-1_0136",NA,NA
+"ppa:PAS_chr3_0372",NA,NA
+"F2QQM8",NA,NA
+"ppa:PAS_chr2-2_0316",NA,NA
+"F2QWF8",NA,NA
+"ppa:PAS_chr2-2_0170",NA,NA
+"ppa:PAS_chr4_0989",NA,NA
+"ppa:PAS_chr1-4_0096",NA,NA
+"F2QUJ6",NA,NA
+"ppa:PAS_chr2-1_0230","ppa04146","Peroxisome - Komagataella phaffii"
+"ppa:PAS_chr1-1_0034","ppa04144","Endocytosis - Komagataella phaffii"
+"ppa:PAS_FragB_0059",NA,NA
+"ppa:PAS_FragB_0072",NA,NA
+"ppa:PAS_chr4_0647",NA,NA
+"F2QSM9",NA,NA
+"ppa:PAS_FragD_0017",NA,NA
+"ppa:PAS_chr2-2_0449","ppa03040","Spliceosome - Komagataella phaffii"
+"ppa:PAS_chr3_1147","ppa03040","Spliceosome - Komagataella phaffii"
+"ppa:PAS_chr4_0893",NA,NA
+"ppa:PAS_chr2-1_0823",NA,NA
+"ppa:PAS_chr1-1_0194",NA,NA
+"ppa:PAS_FragD_0002",NA,NA
+"ppa:PAS_FragB_0075",NA,NA
+"ppa:PAS_chr1-1_0081",NA,NA
+"ppa:PAS_chr1-1_0304",NA,NA
+"ppa:PAS_chr2-1_0815",NA,NA
+"ppa:PAS_chr4_0704","ppa04136","Autophagy - other - Komagataella phaffii"
+"ppa:PAS_chr4_0704","ppa04138","Autophagy - yeast - Komagataella phaffii"
+"ppa:PAS_chr4_0704","ppa04139","Mitophagy - yeast - Komagataella phaffii"
+"ppa:PAS_chr1-4_0312",NA,NA
+"A0A1G4KQY5",NA,NA
+"ppa:PAS_chr3_0573",NA,NA
+"ppa:PAS_chr1-1_0495",NA,NA
+"ppa:PAS_chr2-1_0378",NA,NA
+"F2QMQ9",NA,NA
+"ppa:PAS_chr2-2_0062",NA,NA
+"ppa:PAS_chr1-3_0116",NA,NA
+"ppa:PAS_chr1-4_0348",NA,NA
+"ppa:PAS_chr1-4_0310","ppa04136","Autophagy - other - Komagataella phaffii"
+"ppa:PAS_chr1-4_0310","ppa04138","Autophagy - yeast - Komagataella phaffii"
+"ppa:PAS_chr4_0451",NA,NA
+"ppa:PAS_chr3_0275",NA,NA
+"ppa:PAS_chr2-2_0431","ppa03020","RNA polymerase - Komagataella phaffii"
+"ppa:PAS_chr2-2_0017","ppa00230","Purine metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-2_0017","ppa00240","Pyrimidine metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-2_0017","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr2-2_0017","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr2-2_0017","ppa01232","Nucleotide metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-4_0296",NA,NA
+"ppa:PAS_chr1-3_0216",NA,NA
+"ppa:PAS_chr4_0290",NA,NA
+"ppa:PAS_chr3_0269",NA,NA
+"ppa:PAS_chr2-2_0301",NA,NA
+"ppa:PAS_chr2-2_0239","ppa03018","RNA degradation - Komagataella phaffii"
+"ppa:PAS_chr3_1216",NA,NA
+"ppa:PAS_chr2-1_0621",NA,NA
+"ppa:PAS_chr4_0940","ppa00790","Folate biosynthesis - Komagataella phaffii"
+"ppa:PAS_chr4_0940","ppa01240","Biosynthesis of cofactors - Komagataella phaffii"
+"ppa:PAS_chr1-4_0066",NA,NA
+"ppa:PAS_chr4_0231",NA,NA
+"ppa:PAS_chr3_0994",NA,NA
+"ppa:PAS_chr1-4_0236",NA,NA
+"ppa:PAS_chr1-1_0174",NA,NA
+"ppa:PAS_chr1-1_0072","ppa00010","Glycolysis / Gluconeogenesis - Komagataella phaffii"
+"ppa:PAS_chr1-1_0072","ppa00030","Pentose phosphate pathway - Komagataella phaffii"
+"ppa:PAS_chr1-1_0072","ppa00051","Fructose and mannose metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-1_0072","ppa00680","Methane metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-1_0072","ppa00710","Carbon fixation by Calvin cycle - Komagataella phaffii"
+"ppa:PAS_chr1-1_0072","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr1-1_0072","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr1-1_0072","ppa01200","Carbon metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-1_0072","ppa01230","Biosynthesis of amino acids - Komagataella phaffii"
+"ppa:PAS_chr3_0239",NA,NA
+"ppa:PAS_chr2-1_0658","ppa03010","Ribosome - Komagataella phaffii"
+"ppa:PAS_chr2-1_0879",NA,NA
+"ppa:PAS_chr3_1194","ppa00380","Tryptophan metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_1194","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_1194","ppa01240","Biosynthesis of cofactors - Komagataella phaffii"
+"ppa:PAS_chr4_0052","ppa01040","Biosynthesis of unsaturated fatty acids - Komagataella phaffii"
+"ppa:PAS_chr4_0052","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0052","ppa01212","Fatty acid metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0551",NA,NA
+"ppa:PAS_chr2-2_0129",NA,NA
+"ppa:PAS_chr4_0663",NA,NA
+"ppa:PAS_chr2-2_0490",NA,NA
+"ppa:PAS_chr1-3_0238","ppa00564","Glycerophospholipid metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-3_0238","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_0426",NA,NA
+"ppa:PAS_chr4_0338","ppa00051","Fructose and mannose metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0338","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_FragB_0004","ppa03040","Spliceosome - Komagataella phaffii"
+"F2QUR1",NA,NA
+"ppa:PAS_chr1-3_0272",NA,NA
+"ppa:PAS_chr4_0070",NA,NA
+"ppa:PAS_chr3_0705",NA,NA
+"ppa:PAS_chr3_0608",NA,NA
+"ppa:PAS_chr2-1_0329",NA,NA
+"F2QX97",NA,NA
+"F2QXT6",NA,NA
+"ppa:PAS_chr2-2_0107","ppa00062","Fatty acid elongation - Komagataella phaffii"
+"ppa:PAS_chr2-2_0107","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr2-2_0107","ppa01212","Fatty acid metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-2_0107","ppa04142","Lysosome - Komagataella phaffii"
+"ppa:PAS_chr2-2_0485",NA,NA
+"ppa:PAS_chr3_0693","ppa00010","Glycolysis / Gluconeogenesis - Komagataella phaffii"
+"ppa:PAS_chr3_0693","ppa00260","Glycine, serine and threonine metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0693","ppa00680","Methane metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0693","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_0693","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr3_0693","ppa01200","Carbon metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0693","ppa01230","Biosynthesis of amino acids - Komagataella phaffii"
+"ppa:PAS_chr4_0295",NA,NA
+"ppa:PAS_chr1-1_0065","ppa03008","Ribosome biogenesis in eukaryotes - Komagataella phaffii"
+"ppa:PAS_chr4_0138","ppa00220","Arginine biosynthesis - Komagataella phaffii"
+"ppa:PAS_chr4_0138","ppa00240","Pyrimidine metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0138","ppa00250","Alanine, aspartate and glutamate metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0138","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0138","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr4_0138","ppa01240","Biosynthesis of cofactors - Komagataella phaffii"
+"ppa:PAS_chr4_0535","ppa00190","Oxidative phosphorylation - Komagataella phaffii"
+"ppa:PAS_chr4_0535","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr1-3_0203",NA,NA
+"ppa:PAS_chr3_1087","ppa04138","Autophagy - yeast - Komagataella phaffii"
+"ppa:PAS_chr2-1_0057",NA,NA
+"ppa:PAS_chr2-1_0047","ppa00240","Pyrimidine metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0047","ppa00330","Arginine and proline metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0047","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr2-1_0047","ppa01232","Nucleotide metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0514",NA,NA
+"ppa:PAS_chr2-2_0178","ppa04141","Protein processing in endoplasmic reticulum - Komagataella phaffii"
+"ppa:PAS_chr3_0211",NA,NA
+"ppa:PAS_chr2-1_0117","ppa04011","MAPK signaling pathway - yeast - Komagataella phaffii"
+"ppa:PAS_chr2-2_0265","ppa00190","Oxidative phosphorylation - Komagataella phaffii"
+"ppa:PAS_chr2-2_0265","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr2-1_0238","ppa00020","Citrate cycle (TCA cycle) - Komagataella phaffii"
+"ppa:PAS_chr2-1_0238","ppa00270","Cysteine and methionine metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0238","ppa00620","Pyruvate metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0238","ppa00630","Glyoxylate and dicarboxylate metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0238","ppa00710","Carbon fixation by Calvin cycle - Komagataella phaffii"
+"ppa:PAS_chr2-1_0238","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr2-1_0238","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr2-1_0238","ppa01200","Carbon metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0831","ppa03008","Ribosome biogenesis in eukaryotes - Komagataella phaffii"
+"ppa:PAS_chr3_1225",NA,NA
+"ppa:PAS_chr1-4_0676",NA,NA
+"ppa:PAS_chr1-4_0695",NA,NA
+"A0A1G4KQM4",NA,NA
+"ppa:PAS_chr2-2_0258",NA,NA
+"ppa:PAS_chr4_0317",NA,NA
+"ppa:PAS_chr1-1_0407",NA,NA
+"ppa:PAS_chr2-2_0030",NA,NA
+"ppa:PAS_chr3_1235",NA,NA
+"ppa:PAS_chr3_0833",NA,NA
+"ppa:PAS_chr3_1022",NA,NA
+"ppa:PAS_chr4_0191","ppa00620","Pyruvate metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0191","ppa00630","Glyoxylate and dicarboxylate metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0191","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0191","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr4_0191","ppa01200","Carbon metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0590",NA,NA
+"ppa:PAS_chr4_0482",NA,NA
+"ppa:PAS_chr1-4_0634","ppa03430","Mismatch repair - Komagataella phaffii"
+"ppa:PAS_chr3_0667","ppa00230","Purine metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0667","ppa00920","Sulfur metabolism - Komagataella phaffii"
+"ppa:PAS_chr3_0667","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_0667","ppa01320","Sulfur cycle - Komagataella phaffii"
+"ppa:PAS_chr4_0294","ppa00400","Phenylalanine, tyrosine and tryptophan biosynthesis - Komagataella phaffii"
+"ppa:PAS_chr4_0294","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr4_0294","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr4_0294","ppa01230","Biosynthesis of amino acids - Komagataella phaffii"
+"ppa:PAS_chr4_0728",NA,NA
+"ppa:PAS_chr3_0905",NA,NA
+"ppa:PAS_chr3_0183",NA,NA
+"ppa:PAS_chr1-3_0137",NA,NA
+"ppa:PAS_chr1-3_0159","ppa04011","MAPK signaling pathway - yeast - Komagataella phaffii"
+"ppa:PAS_chr4_0461",NA,NA
+"ppa:PAS_chr3_0737","ppa03022","Basal transcription factors - Komagataella phaffii"
+"ppa:PAS_chr4_0030",NA,NA
+"F2QPT8",NA,NA
+"ppa:PAS_chr4_0690","ppa03008","Ribosome biogenesis in eukaryotes - Komagataella phaffii"
+"ppa:PAS_chr1-4_0183","ppa03022","Basal transcription factors - Komagataella phaffii"
+"ppa:PAS_chr1-4_0478",NA,NA
+"ppa:PAS_chr4_0274",NA,NA
+"ppa:PAS_chr3_0123",NA,NA
+"ppa:PAS_chr1-3_0026",NA,NA
+"ppa:PAS_FragB_0061","ppa00010","Glycolysis / Gluconeogenesis - Komagataella phaffii"
+"ppa:PAS_FragB_0061","ppa00020","Citrate cycle (TCA cycle) - Komagataella phaffii"
+"ppa:PAS_FragB_0061","ppa00620","Pyruvate metabolism - Komagataella phaffii"
+"ppa:PAS_FragB_0061","ppa00710","Carbon fixation by Calvin cycle - Komagataella phaffii"
+"ppa:PAS_FragB_0061","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_FragB_0061","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_FragB_0061","ppa01200","Carbon metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0389","ppa04814","Motor proteins - Komagataella phaffii"
+"ppa:PAS_chr4_0770",NA,NA
+"ppa:PAS_chr3_0632",NA,NA
+"ppa:PAS_chr4_0567",NA,NA
+"ppa:PAS_chr3_0574","ppa03020","RNA polymerase - Komagataella phaffii"
+"ppa:PAS_chr3_0704","ppa00190","Oxidative phosphorylation - Komagataella phaffii"
+"ppa:PAS_chr3_0704","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr3_0704","ppa04145","Phagosome - Komagataella phaffii"
+"ppa:PAS_chr1-4_0023","ppa03250","Viral life cycle - HIV-1 - Komagataella phaffii"
+"ppa:PAS_chr1-4_0023","ppa03272","Virion - Hepatitis viruses - Komagataella phaffii"
+"ppa:PAS_chr1-4_0023","ppa04144","Endocytosis - Komagataella phaffii"
+"ppa:PAS_chr2-1_0070",NA,NA
+"ppa:PAS_chr4_0804","ppa04139","Mitophagy - yeast - Komagataella phaffii"
+"ppa:PAS_chr3_0917",NA,NA
+"ppa:PAS_chr3_0593",NA,NA
+"ppa:PAS_chr4_0512",NA,NA
+"ppa:PAS_chr4_0489",NA,NA
+"ppa:PAS_chr3_0133","ppa04113","Meiosis - yeast - Komagataella phaffii"
+"ppa:PAS_chr3_0133","ppa04138","Autophagy - yeast - Komagataella phaffii"
+"ppa:PAS_chr2-1_0386",NA,NA
+"ppa:PAS_chr1-3_0287",NA,NA
+"ppa:PAS_chr4_0862",NA,NA
+"ppa:PAS_chr1-1_0063","ppa00230","Purine metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-1_0063","ppa00240","Pyrimidine metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-1_0063","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr1-1_0063","ppa01110","Biosynthesis of secondary metabolites - Komagataella phaffii"
+"ppa:PAS_chr1-1_0063","ppa01232","Nucleotide metabolism - Komagataella phaffii"
+"ppa:PAS_chr1-1_0037",NA,NA
+"ppa:PAS_chr3_0106",NA,NA
+"ppa:PAS_chr3_0100",NA,NA
+"ppa:PAS_chr3_0947",NA,NA
+"ppa:PAS_chr2-1_0244",NA,NA
+"ppa:PAS_chr3_0431","ppa03013","Nucleocytoplasmic transport - Komagataella phaffii"
+"ppa:PAS_chr4_0541",NA,NA
+"ppa:PAS_chr3_0916",NA,NA
+"ppa:PAS_chr2-1_0832",NA,NA
+"ppa:PAS_chr1-3_0309",NA,NA
+"ppa:PAS_chr1-3_0058",NA,NA
+"ppa:PAS_chr2-2_0033","ppa04011","MAPK signaling pathway - yeast - Komagataella phaffii"
+"ppa:PAS_chr2-1_0770","ppa00240","Pyrimidine metabolism - Komagataella phaffii"
+"ppa:PAS_chr2-1_0770","ppa01100","Metabolic pathways - Komagataella phaffii"
+"ppa:PAS_chr2-1_0770","ppa01232","Nucleotide metabolism - Komagataella phaffii"
+"ppa:PAS_chr4_0642",NA,NA
+"ppa:PAS_chr1-4_0649",NA,NA
+"ppa:PAS_chr4_0270",NA,NA
+"A0A1G4KQB5",NA,NA
+"ppa:PAS_chr1-4_0675",NA,NA
